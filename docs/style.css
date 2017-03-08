@@ -1,6 +1,13 @@
 .vid {
-    padding: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 p { 
     color: aqua;
+}
+
+body {
+    background-color: #5f516c;
 }
