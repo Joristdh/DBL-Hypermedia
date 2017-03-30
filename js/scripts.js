@@ -8,7 +8,7 @@ $(document).ready(function () {
     });
     $("#bachelor").click(function () {
         $(function () {
-            $("#pagebody").load("/docs/test.html");
+            $("#pagebody").load("/docs/general_aboutcse.html");
         });
     });
 
