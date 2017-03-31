@@ -23,6 +23,13 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!-- js -->
+    <script src="js/scripts.js"></script>
 
 
 </head>
@@ -39,15 +46,19 @@
 
                 </li>
                 <li>
-                    <a href="#">General</a>
+                    <div class="fold"><a href="#"><img src="img/arrow.png"></a></div>
+                    <a href="#" id="general">General</a>
                 </li>
                 <li>
-                    <a href="#">Bachelor</a>
+                    <div class="fold"><a href="#"><img src="img/arrow.png"></a></div>
+                    <a href="#" id="bachelor">Bachelor</a>
                 </li>
                 <li>
+                    <div class="fold"><a href="#"><img src="img/arrow.png"></a></div>
                     <a href="#">Master</a>
                 </li>
                 <li>
+                    <div class="fold"><a href="#"><img src="img/arrow.png"></a></div>
                     <a href="#">Pre-Master</a>
                 </li>
             </ul>
@@ -59,7 +70,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <a href="#menu-toggle" class="btn" id="menu-toggle"><img src="img/sideimg.png" width=50></a>
+                        <a style="padding-top: 10px" href="#menu-toggle" class="btn" id="menu-toggle"><img src="img/sideimg.png" width=50></a>
                         <div id="pagebody"></div>
                     </div>
                 </div>
@@ -72,25 +83,12 @@
     <!-- /#wrapper -->
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    
 
     <!-- Menu Toggle Script -->
-    <script>
-        $("#menu-toggle").click(function(e) {
-            e.preventDefault();
-            $("#wrapper").toggleClass("toggled");
-        });
-    </script>
+    
 
-    <!-- Load Page Script -->
-    <script>
-        $(function() {
-            $("#pagebody").load("docs/test.html");
-        });
-    </script>
+    
 </body>
 
 </html>
