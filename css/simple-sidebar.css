@@ -54,7 +54,7 @@ body {
 }
 
 #page-content-wrapper {
-    width: 100%;
+    width: 70%;
     position: absolute;
     padding: 15px;
 }
@@ -129,7 +129,7 @@ body {
     background: none;
 }
 
-@media(max-width:768px) {
+@media(min-width:768px) {
     #wrapper {
         padding-left: 0;
     }
