@@ -1,6 +1,7 @@
 /*global $,*/
 $(document).ready(function () {
     "use strict";
+    $(".arrowc").rotate({angle: 180});
     
     $(function () {
         $("#pagebody").load("docs/setup_survey.html");
@@ -17,20 +18,22 @@ $(document).ready(function () {
         });
     });
 
-    var angle = 0;
     $(".fold").click(function () {
-        if (angle === 0) {
-            $(this).find(".arrow").rotate({
-                animateTo: 180
-            });
-            angle = 1;
-        } else if (angle === 1) {
-            $(this).find(".arrow").rotate({
+        $(".arrow, .arrowc").rotate({
+            animateTo: 0
+        });
+        if ($(this).find(".arrow, .arrowc").getRotateAngle() > 100) {
+            $(this).find(".arrow, .arrowc").rotate({
                 animateTo: 0
             });
-            angle = 0;
+        } else {
+            $(this).find(".arrow, .arrowc").rotate({
+                animateTo: 180
+            });
         }
-        $(this).siblings(".collapse").collapse('toggle');
+        
+        $(".collapse").collapse('hide');
+        $(this).siblings(".collapse").collapse('show');
     });
 
 
