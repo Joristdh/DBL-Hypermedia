@@ -7,7 +7,7 @@ $(document).ready(function () {
     $(function () {
         $("#pagebody").load("docs/setup_survey.html");
     });
-    
+
     $("#general").click(function () {
         $(function () {
             $("#pagebody").load("docs/general_learningobj.html");
@@ -19,7 +19,10 @@ $(document).ready(function () {
         });
     });
 
-    
+    $(".fold").click(function () {
+        $(this).siblings(".collapse").collapse('toggle');
+
+    });
 
     $("#menu-toggle").click(function (e) {
         e.preventDefault();
