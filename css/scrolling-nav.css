@@ -25,7 +25,8 @@ html {
     .section h1 {
         margin: auto;
         padding-left: 0;
-        max-width: 50%
+        max-width: 50%;
+        font-size: 1em;
     }
 
 @media(min-width:767px) {
@@ -38,6 +39,7 @@ html {
     .section h1 {
         margin: auto;
         padding-left: 0;
-        max-width: 50%
+        max-width: 50%;
+        font-size: 2em;
     }
 }
