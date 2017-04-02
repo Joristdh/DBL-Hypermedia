@@ -3,7 +3,7 @@ $(document).ready(function () {
     "use strict";
     $(".arrowc").rotate({angle: 180});
     
-    $(function () {
+     /* $(function () {
         $("#pagebody").load("docs/setup_survey.html");
     });
 
@@ -17,7 +17,9 @@ $(document).ready(function () {
             $("#pagebody").load("docs/general_aboutcse.html");
         });
     });
-
+*/
+    
+  
     $(".fold").click(function () {
         $(".arrow, .arrowc").rotate({
             animateTo: 0
@@ -33,7 +35,7 @@ $(document).ready(function () {
         }
         
         $(".collapse").collapse('hide');
-        $(this).siblings(".collapse").collapse('show');
+        $(this).siblings(".collapse").collapse("toggle");
     });
 
 

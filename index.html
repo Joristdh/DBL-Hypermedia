@@ -5,7 +5,7 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -15,7 +15,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/scrolling-nav.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -23,103 +23,110 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Rotation lib -->
-    <script src="js/jQueryRotate.js"></script>
-    <!-- js -->
-    <script src="js/scripts.js"></script>
 
 </head>
 
-<body>
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
-    <div id="wrapper">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="#">TU/e</a>
 
-                </li>
-                <li>
-                    <div class="fold"><a href="#"><img class="arrow" src="img/arrow.png"></a></div>
-                    <a href="#" id="general">General</a>
-                    <ul class="collapse" style="color:#fff; background-color:#222">
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                    </ul>
-                    
-                </li>
-                <li>
-                    <div class="fold"><a href="#"><img class="arrow" src="img/arrow.png"></a></div>
-                    <a href="#" id="bachelor">Bachelor</a>
-                    <ul class="collapse" style="color:#fff; background-color:#222">
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                    </ul>
-                </li>
-                <li>
-                    <div class="fold"><a href="#"><img class="arrow" src="img/arrow.png"></a></div>
-                    <a href="#">Master</a>
-                    <ul class="collapse" style="color:#fff; background-color:#222">
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                    </ul>
-                </li>
-                <li>
-                    <div class="fold"><a href="#"><img class="arrow" src="img/arrow.png"></a></div>
-                    <a href="#">Pre-Master</a>
-                    <ul class="collapse" style="color:#fff; background-color:#222">
-                        <li><a href="test.html">1</a></li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                    </ul>
-                </li>
-            </ul>
+    <!-- Intro Section -->
+    <section id="intro" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Set-up quick profile to easily find information important to you</h1>
+                    <p></p>
+                    <a class="btn btn-default page-scroll" href="#program">Let's Go!</a>
+
+                </div>
+
+                <a href="#">or skip this</a>
+            </div>
         </div>
-        <!-- /#sidebar-wrapper -->
+    </section>
 
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <a style="padding-top: 10px" href="#menu-toggle" class="btn" id="menu-toggle"><img src="img/sideimg.png" width=50></a>
-                        <div id="pagebody"></div>
+    <!-- About Section -->
+    <section id="program" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>I'm interested in:</h1>
+                    <p></p>
+                    <div id="choice">
+                        <div id="bsc">
+                            <a class="btn btn-default page-scroll" href="#bachelor">Bachelor College</a>
+                        </div>&nbsp;
+                        <div id="msc">
+                            <a class="btn btn-default page-scroll" href="#master">Graduate School</a>
+                        </div>&nbsp;
+                        <div id="premsc">
+                            <a class="btn btn-default page-scroll" href="#premaster">Pre-Masters</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- /#page-content-wrapper -->
+    <!-- Services Section -->
+    <section id="bachelor" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>I'm enrolled in:</h1>
+                    <p></p>
+                </div>
+                <div id="cse">
+                    <a class="btn btn-default page-scroll" href="main.html">Computer Science &amp; Engineering</a>
+                </div>&nbsp;
+                <div id="pt">
+                    <a class="btn btn-default page-scroll" href="#">Psychology &amp; Technology</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    </div>
-    <!-- /#wrapper -->
+    <!-- Contact Section -->
+    <section id="master" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>I'm enrolled in:</h1>
+                    <p></p>
+                </div>
+                <div id="cse_msc">
+                    <a class="btn btn-default page-scroll" href="#">Computer Science &amp; Engineering</a>
+                </div>&nbsp;
+                <div id="hti">
+                    <a class="btn btn-default page-scroll" href="#">Human-Technology Interaction</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="premaster" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>I'm enrolled in:</h1>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- jQuery -->
-    
+    <script src="js/jquery.js"></script>
 
-    <!-- Menu Toggle Script -->
-    
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
-    
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+
 </body>
 
 </html>

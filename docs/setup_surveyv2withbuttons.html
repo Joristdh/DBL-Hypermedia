@@ -1,97 +1,69 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>TU/e Eudcation guide</title>
-        <link href="../css/bootstrap.css" rel="stylesheet"/>
-        <link href="../css/simple-sidebar.css" rel="stylesheet"/>
-    </head>
-	
-    
-    <body>
-	
-        <div id="language">
-            <div id="dutch">
-                <a><img src="../Flag_of_the_Netherlands.svg.png">  <button>Continue in Dutch</button></a> <
-            </div>
-            <div id="english">
-                <a href="#start"><img src="../Flag_of_the_United_Kingdom.svg.png"> <button>Continue in English</button></a>
-            </div>
+
+<head>
+    <title>TU/e Eudcation guide</title>
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/simple-sidebar.css" rel="stylesheet" />
+    <link href="css/scrolling-nav.css" rel="stylesheet" />
+
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+</head>
+
+
+<body data-spy="scroll">
+
+    <section id="intro" class="intro-section">
+        <h1>Set-up quick profile to easily find information important to you</h1>
+        &nbsp;
+        <div id="start_button">
+
+            <a class="page-scroll" href="#program"><button>Let's go</button></a>
         </div>
-        <div id="start">
-            <h1>Set-up quick profile to easily find information important to you</h1>
-		
-            <div id="start_button">
-                <a href="#program"><button>Let's go</button></a>
+        <div id="skip"><a>or skip this</a></div>
+    </section>
+    <section id="program">
+        <h1>I'm interested in:</h1>
+        <div id="choice">
+            <div id="bsc">
+                <a href="#study_bsc"><button>Bachelor College</button></a>
             </div>
-            <div id="skip"><a><button>or skip this</button></a></div>
-        </div>
-        <div id="program">
-            <h1>I'm interested in:</h1>
-            <div id="choice">
-                <div id="bsc">
-                    <a href="#study_bsc"><button>Bachelor College</button></a>
-                </div>
-                <div id="msc">
-                    <a href="#study_msc"><button>Graduate School</button></a>
-                </div>
-                <div id="premsc">
-                    <a href="#study_premsc"><button>Pre-Masters</button></a>
-                </div>
+            <div id="msc">
+                <a href="#study_msc"><button>Graduate School</button></a>
+            </div>
+            <div id="premsc">
+                <a href="#study_premsc"><button>Pre-Masters</button></a>
             </div>
         </div>
-        <div id="study_bsc">
-            <h1>I'm enrolled in:</h1>
-            <div id="choice">
-                <div id="cse">
-                    <a href="general_aboutcse.html"><button>Computer Science and Engineering</button></a>
-                </div>
-                <div id="pt">
-                    <a><button>Psychology and Technology</button></a>
-                </div>
+    </section>
+    <section id="study_bsc">
+        <h1>I'm enrolled in:</h1>
+        <div id="choice">
+            <div id="cse">
+                <a href="general_aboutcse.html"><button>Computer Science and Engineering</button></a>
+            </div>
+            <div id="pt">
+                <a><button>Psychology and Technology</button></a>
             </div>
         </div>
-        <div id="study_msc">
-            <h1>I'm enrolled in:</h1>
-            <div id="choice">
-                <div id="cse_msc">
-                    <a><button>Computer Science and Engineering</button></a>
-                </div>
-                <div id="hti">
-                    <a><button>Human-Technology Interaction</button></a>
-                </div>
+    </section>
+    <section id="study_msc">
+        <h1>I'm enrolled in:</h1>
+        <div id="choice">
+            <div id="cse_msc">
+                <a><button>Computer Science and Engineering</button></a>
+            </div>
+            <div id="hti">
+                <a><button>Human-Technology Interaction</button></a>
             </div>
         </div>
-        <div id="study_premsc">
-            <h1>I'm enrolled in:</h1>
-            <h3>Nothing Special</h3>
-        </div>
-        <div id="spam">
-            <h1>
-                HI<br>
-                HI<br>
-                HI<br>
-                HI<br>
-                HI<br>
-                HI<br>
-                HI<br>
-                HI<br>
-                HI<br>
-                HI<br>
-                HI<br>
-                HI<br>
-                
-                HI<br>
-                HI<br>
-                HI<br>
-                HI<br>
-                HI<br>
-                HI<br>
-                HI<br>
-                HI<br>
-                HI<br>
-                
-            </h1>
-        </div>
-        
-    </body>
+    </section>
+    <section id="study_premsc">
+        <h1>I'm enrolled in:</h1>
+        <h3>Nothing Special</h3>
+    </section>
+
+</body>
+
 </html>

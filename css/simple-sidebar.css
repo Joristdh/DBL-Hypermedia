@@ -85,6 +85,7 @@ body {
     float: right;
 }
 
+
 .sidebar-nav li .fold a {
     padding-right: 10px;
 }
@@ -101,6 +102,7 @@ body {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+
 }
 
 .sidebar-nav li a:hover {
@@ -118,6 +120,8 @@ body {
     height: 65px;
     font-size: 18px;
     line-height: 60px;
+    text-align: center;
+    padding-right: 30px;
 }
 
 .sidebar-nav>.sidebar-brand a {
@@ -128,6 +132,15 @@ body {
     color: #fff;
     background: none;
 }
+
+#sidebar-footer {
+    position: absolute;
+    bottom: 0;
+}
+#sidebar-footer li a {
+ color: #999;
+}
+
 
 @media(min-width:768px) {
     #wrapper {

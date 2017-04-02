@@ -25,6 +25,8 @@
     <![endif]-->
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <!-- Rotation lib -->
@@ -42,7 +44,7 @@
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
-                    <a href="docs/main.html">TU/e</a>
+                    <a href="#">TU/e</a>
 
                 </li>
                 <li>
@@ -51,7 +53,7 @@
                     </div>
                     <a href="#" id="general">General</a>
                     <ul class="collapse" style="color:#fff; background-color:#222">
-                        <li>1</li>
+                        <li id="1">1</li>
                         <li>2</li>
                         <li>3</li>
                         <li>4</li>
@@ -65,6 +67,16 @@
                     </div>
                     <a href="#" id="bachelor">Bachelor</a>
                     <ul class="collapse" style="color:#fff; background-color:#222">
+                        <li><a href="docs/general_aboutcse.html">Computer Science &amp; Engineering</a></li>
+                        <li><a href="docs/PT_general.html">Psycology &amp; Technology</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="fold">
+                        <a href="#"><img class="arrow" src="img/arrow.png"></a>
+                    </div>
+                    <a href="#" id="master">Master</a>
+                    <ul class="collapse" style="color:#fff; background-color:#222">
                         <li>1</li>
                         <li>2</li>
                         <li>3</li>
@@ -76,22 +88,9 @@
                     <div class="fold">
                         <a href="#"><img class="arrow" src="img/arrow.png"></a>
                     </div>
-                    <a href="#">Master</a>
+                    <a href="#" id="pre-master">Pre-Master</a>
                     <ul class="collapse" style="color:#fff; background-color:#222">
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                    </ul>
-                </li>
-                <li>
-                    <div class="fold">
-                        <a href="#"><img class="arrowc" src="img/arrow.png"></a>
-                    </div>
-                    <a href="#">Pre-Master</a>
-                    <ul class="collapse in" style="color:#fff; background-color:#222">
-                        <li><a href="docs/test.html">1</a></li>
+                        <li><a href="test.html">1</a></li>
                         <li>2</li>
                         <li>3</li>
                         <li>4</li>
@@ -99,6 +98,15 @@
                     </ul>
                 </li>
             </ul>
+            <ul id="sidebar-footer">
+                <li>
+                <a href="docs/setup_surveyv2withbuttons.html">Switch Profile</a>
+                </li>
+                <li>
+                <a href="#" style="float: 'right';";>View site in Dutch</a>
+                </li>
+            </ul>
+            
         </div>
         <!-- /#sidebar-wrapper -->
 
@@ -108,7 +116,6 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <a style="padding-top: 10px" href="#menu-toggle" class="btn" id="menu-toggle"><img src="img/sideimg.png" width=50></a>
-                        <div id="pagebody"></div>
                     </div>
                 </div>
             </div>
