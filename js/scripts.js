@@ -1,9 +1,18 @@
 /*global $,*/
 $(document).ready(function () {
     "use strict";
-    $(".arrowc").rotate({angle: 180});
+    $(".arrowc").rotate({
+        angle: 180
+    });
+     $("#wrapper.home").toggleClass("toggled");
+    if (window.innerWidth < 768) {
+        $("#wrapper").toggleClass("toggled");
+    }
+   
     
-     /* $(function () {
+
+
+    /* $(function () {
         $("#pagebody").load("docs/setup_survey.html");
     });
 
@@ -18,8 +27,8 @@ $(document).ready(function () {
         });
     });
 */
-    
-  
+
+
     $(".fold").click(function () {
         $(".arrow, .arrowc").rotate({
             animateTo: 0
@@ -33,16 +42,13 @@ $(document).ready(function () {
                 animateTo: 180
             });
         }
-        
+
         $(".collapse").collapse('hide');
         $(this).siblings(".collapse").collapse("toggle");
     });
-
-
 
     $("#menu-toggle").click(function (e) {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
     });
-
 });
