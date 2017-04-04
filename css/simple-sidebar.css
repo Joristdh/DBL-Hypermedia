@@ -16,7 +16,6 @@ h1 {
     height: 25px;
 }
 
-
 #menu-toggle {
     position: absolute;
 }
@@ -175,7 +174,8 @@ body {
     line-height: 60px;
     padding-right: 30px;
 }
-div.sidebar-back{
+
+div.sidebar-back {
     position: relative;
     top: -20px;
     margin-bottom: -30px;
@@ -185,7 +185,6 @@ div.sidebar-back a {
     color: #999;
     font-size: 1.3em;
 }
-
 
 .sidebar-nav>.sidebar-back a {
     color: #999999;
@@ -213,15 +212,21 @@ div.sidebar-footer a {
 }
 
 #sidebar-wrapper.home {
-    width: ;
+    animation: 0.4s ease-out 0s 1 sideBar;
 }
 
-
-
+@keyframes sideBar {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
 
 @media(min-width:768px) {
     #wrapper {
-        padding-left: 0;
+        padding-left: 250px;
     }
     #wrapper.toggled {
         padding-left: 250px;

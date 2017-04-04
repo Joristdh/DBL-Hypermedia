@@ -4,9 +4,9 @@ $(document).ready(function () {
     $(".arrowc").rotate({
         angle: 180
     });
-    $("#wrapper.home").toggleClass("toggled");
+    
     if (window.innerWidth < 768) {
-        $("#wrapper").toggleClass("toggled");
+        $("#wrapper").removeClass("toggled");
     }
     $("#back").click(function () {
         $("#wrapper.toggled #sidebar-wrapper.CSE").css("padding-left", "250px");
