@@ -51,5 +51,8 @@ $(document).ready(function () {
     $("#menu-toggle").click(function (e) {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
+        $("#wrapper #sidebar-wrapper.CSE").css("padding-left", "0");
+        $("#wrapper #sidebar-wrapper.main").css("width", "0");
+        
     });
 });
