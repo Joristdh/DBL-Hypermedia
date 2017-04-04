@@ -13,23 +13,6 @@ $(document).ready(function () {
         $("#wrapper.toggled #sidebar-wrapper.main").css("width", "250px");
     });
 
-    /* $(function () {
-            $("#pagebody").load("docs/setup_survey.html");
-        });
-
-        $("#general").click(function () {
-            $(function () {
-                $("#pagebody").load("docs/general_learningobj.html");
-            });
-        });
-        $("#bachelor").click(function () {
-            $(function () {
-                $("#pagebody").load("docs/general_aboutcse.html");
-            });
-        });
-    */
-
-
     $(".fold").click(function () {
         $(".arrow, .arrowc").rotate({
             animateTo: 0
