@@ -7,7 +7,7 @@ $(document).ready(function () {
     });
     $("a.switch").click(function () {
         localStorage.major = null;
-        sessionStorage.ani = null;
+        sessionStorage.clear();
     });
     $(".collapse a").prepend("&nbsp;&nbsp;");
     if (window.innerWidth < 768) {
