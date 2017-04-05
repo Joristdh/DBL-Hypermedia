@@ -5,8 +5,8 @@ $(document).ready(function () {
     $(".arrowc").rotate({
         angle: 180
     });
-    $("#a").click(function () {
-        window.alert("test");
+    $("a.switch").click(function () {
+        localStorage.major = null;
     });
     $(".collapse a").prepend("&nbsp;&nbsp;");
     if (window.innerWidth < 768) {

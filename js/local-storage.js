@@ -3,9 +3,12 @@
 
 $(document).ready(function () {
     "use strict";
+    $("#a").click(function () {
+        alert("test");
+    });
     if (typeof (Storage) !== "undefined") {
         var major = localStorage.getItem("major");
-            window.alert("major: " + major);
+            //window.alert("major: " + major);
             if (major === "cse" || major === "pt" || major === "cse_msc" || major === "hti") {
                 switch (major) {
                 case "cse":
