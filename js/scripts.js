@@ -19,14 +19,17 @@ $(document).ready(function () {
 
     $(".fold").click(function () {
         $(".arrow, .arrowc").rotate({
+            duration: 600,
             animateTo: 0
         });
         if ($(this).find(".arrow, .arrowc").getRotateAngle() > 100) {
             $(this).find(".arrow, .arrowc").rotate({
+                duration: 600,
                 animateTo: 0
             });
         } else {
             $(this).find(".arrow, .arrowc").rotate({
+                duration: 600,
                 animateTo: 180
             });
         }
