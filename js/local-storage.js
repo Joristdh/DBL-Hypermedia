@@ -6,17 +6,17 @@ $(document).ready(function () {
     if (typeof (Storage) !== "undefined") {
         var major = localStorage.getItem("major");
         if (window.location.href.match("index.html")) {
-            //window.alert("major: " + major);
+            window.alert("major: " + major);
             if (major === "cse" || major === "pt" || major === "cse_mse" || major === "hti") {
                 switch (major) {
                 case "cse":
-                    window.location.replace('main.html');
+                    window.location.replace("http://wwwis.win.tue.nl/~dblh3_2017/docs/general_aboutcse.html");
                     break;
                 case "pt":
                     window.location.replace('main.html');
                     break;
                 case "cse_msc":
-                    window.location.replace('main.html');
+                    window.location.replace("http://wwwis.win.tue.nl/~dblh3_2017/docs/msc_general_about.html");
                     break;
                 case "hti":
                     window.location.replace('main.html');
