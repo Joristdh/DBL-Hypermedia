@@ -5,7 +5,6 @@ $(document).ready(function () {
     "use strict";
     if (typeof (Storage) !== "undefined") {
         var major = localStorage.getItem("major");
-        if (window.location.href.match("index.html")) {
             window.alert("major: " + major);
             if (major === "cse" || major === "pt" || major === "cse_msc" || major === "hti") {
                 switch (major) {
@@ -26,9 +25,6 @@ $(document).ready(function () {
                     break;
                 }
             }
-        } else if (window.location.href.match("main.html")) {
-            //window.alert("major: " + major);
-        }
         
         $("#cstest").click(function () {
             //window.alert("cstest is clicked");
@@ -43,13 +39,13 @@ $(document).ready(function () {
             window.location.replace('main.html');
         });
         $("#cse_msc").click(function () {
-            window.alert("cs_msetest is clicked");
+            //window.alert("cs_msetest is clicked");
             major = "cse_msc";
             localStorage.setItem("major", major);
             window.location.replace('main.html');
         });
         $("#htitest").click(function () {
-            window.alert("htitest is clicked");
+            //window.alert("htitest is clicked");
             major = "hti";
             localStorage.setItem("major", major);
             window.location.replace('main.html');

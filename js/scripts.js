@@ -5,7 +5,10 @@ $(document).ready(function () {
     $(".arrowc").rotate({
         angle: 180
     });
-    $(".collapse a").prepend("&nbsp;&nbsp;")
+    $("#a").click(function () {
+        window.alert("test");
+    });
+    $(".collapse a").prepend("&nbsp;&nbsp;");
     if (window.innerWidth < 768) {
         $("#wrapper").removeClass("toggled");
     }
@@ -39,6 +42,7 @@ $(document).ready(function () {
         $(this).siblings(".collapse").collapse("toggle");
     });
     
+   
     
 
     $("#menu-toggle").click(function (e) {
