@@ -229,11 +229,6 @@ ul.collapse li a {
     padding-right: 30px;
 }
 
-div.sidebar-back {
-    position: relative;
-    top: -20px;
-    margin-bottom: -20px;
-}
 
 div.sidebar-back a {
     color: #999;
