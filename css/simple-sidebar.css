@@ -311,6 +311,11 @@ div.sidebar-footer a {
     }
 }
 
+.list {
+    list-style: disc;
+    margin-left: 0px;
+}
+
 @media(min-width:768px) {
     /* basic styling for big screens */
     .col-lg-12 {
