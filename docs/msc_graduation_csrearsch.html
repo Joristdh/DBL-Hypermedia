@@ -28,6 +28,9 @@
     <script src="../js/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="../js/bootstrap.min.js"></script>
+    <!-- Scrolling Nav JavaScript -->
+    <script src="../js/jquery.easing.min.js"></script>
+    <script src="../js/scrolling-nav.js"></script>
     <!-- Rotation lib -->
     <script src="../js/jQueryRotate.js"></script>
     <!-- js -->
@@ -41,12 +44,12 @@
 
         <!-- Sidebar -->
         <div id="sidebar-wrapper" class="main">
-           <ul class="sidebar-nav">
+            <ul class="sidebar-nav">
                 <li class="sidebar-brand">
                     <a href="#">TU/e</a>
 
                 </li>
-                
+
                 <li>
                     <div class="fold">
                         <a href="#"><img class="arrow" src="../img/arrow.png"></a>
@@ -91,12 +94,12 @@
         <div id="sidebar-wrapper" class="current">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
-                   <a href="../main.html">TU/e</a>
+                    <a href="../main.html">TU/e</a>
                 </li>
                 <li>
                     <div class="sidebar-back">
-                    <a href="#" id="back">&lt; Back</a>
-                        </div>
+                        <a href="#" id="back">&lt; Back</a>
+                    </div>
                 </li>
                 <li>
                     <a href="../docs/msc_general_about.html" id="general">Learning Objectives</a>
@@ -109,11 +112,11 @@
                     <ul class="collapse">
                         <li><a href="../docs/msc_curriculum_general.html">General</a></li>
                         <li><a href="../docs/msc_curriculum_wbs_general.html">Web science stream</a></li>
- 
+
                         <li><a href="../docs/msc_curriculum_sfs_general.html">Software science stream</a></li>
-                         
+
                         <li><a href="../docs/msc_curriculum_ss_general.html">Systems science stream</a></li>
-                        
+
                         <li><a href="../docs/msc_curriculum_freestr.html">Free stream</a></li>
                         <li><a href="../docs/msc_curriculum_freeelct.html">Free electives</a></li>
                         <li><a href="../docs/msc_curriculum_compstudyprg.html">Composition of study program</a></li>
@@ -163,7 +166,7 @@
                     </li>
                 </div>
             </ul>
-            
+
         </div>
         <!-- /#sidebar-wrapper -->
 
@@ -179,20 +182,9 @@
                                 <h1>Master Computer Science &amp; Engineering</h1>
                                 <h3>CS research groups</h3>
                                 <p>Here you can read about the different research groups associated with the master programs. Each group provides a short description of their research area, and mentions some courses that are relevant for students who wish to participate their research. The courses are not meant to be obligatory for candidate graduates, but they give an impression of the predispositions of the staff. The contact person mentioned may give you additional information on the possibilities of a graduation project in the corresponding group.</p>
-                                <a href="#algorithms">Algorithms</a><br>
-                                <a href="#apllalgo">Applied geometric algorithms</a><br>
-                                <a href="#archinfs">Architecture of information systems</a><br>
-                                <a href="#webeng">Web Engineering</a><br>
-                                <a href="#formsys">Formal system analysis</a><br>
-                                <a href="#sysarch">System architecture and networking</a><br>
-                                <a href="#softeng">Software Engineering and Technology</a><br>
-                                <a href="#visual">Visualization</a><br>
-                                <a href="#security">Security</a><br>
                                 <div id="algorithms">
                                     <h4>Algorithms</h4>
-                                    <p>Contact person: prof. Mark de Berg<br>
-                                    The creation, storage, analysis and manipulation of spatial data plays a central role in robotics, computer graphics, geographical information systems, and other areas of computer science. In all these areas, there are many challenging algorithmic questions. For example, a typical problem in robotics is to compute efficient routes for a robot moving through a factory building while avoiding all obstacles in its way. A typical problem in geographic information systems could be to find a good location of a new airfield, say the location such that the region in a 20-mile radius around it is the least populated. Such problems form the focus of this specialization: we study techniques and concepts for the design and analysis of efficient algorithms and data structures, with emphasis on algorithms for spatial data. Typical master projects are either experimental or theoretical in nature, depending on the interests of the student.<br>
-                                    Relevant courses are:</p>
+                                    <p>Contact person: prof. Mark de Berg<br> The creation, storage, analysis and manipulation of spatial data plays a central role in robotics, computer graphics, geographical information systems, and other areas of computer science. In all these areas, there are many challenging algorithmic questions. For example, a typical problem in robotics is to compute efficient routes for a robot moving through a factory building while avoiding all obstacles in its way. A typical problem in geographic information systems could be to find a good location of a new airfield, say the location such that the region in a 20-mile radius around it is the least populated. Such problems form the focus of this specialization: we study techniques and concepts for the design and analysis of efficient algorithms and data structures, with emphasis on algorithms for spatial data. Typical master projects are either experimental or theoretical in nature, depending on the interests of the student.<br> Relevant courses are:</p>
                                     <ul>
                                         <li>Algorithms for geographic data (2IMA20)</li>
                                         <li>Advanced algorithms (2IMA10)</li>
@@ -209,8 +201,7 @@
                                 </div>
                                 <div id="apllalgo">
                                     <h4>Applied geometric algorithms</h4>
-                                    <p>Contact person: prof. Bettina Speckmann<br>
-                                    The research area of geometric algorithms, also called computational geometry, has an exciting variety of application areas which include robotics, databases, computer graphics, geographic information science (GIScience), information visualization, and molecular biology, to name a few. The Applied Geometric Algorithms group focusses in particular on (applications of) geometric algorithms to spatial data in the areas of GIScience, including automated cartography and moving object analysis, (geo-)visualization, visual analytics, and e-humanities.</p>
+                                    <p>Contact person: prof. Bettina Speckmann<br> The research area of geometric algorithms, also called computational geometry, has an exciting variety of application areas which include robotics, databases, computer graphics, geographic information science (GIScience), information visualization, and molecular biology, to name a few. The Applied Geometric Algorithms group focusses in particular on (applications of) geometric algorithms to spatial data in the areas of GIScience, including automated cartography and moving object analysis, (geo-)visualization, visual analytics, and e-humanities.</p>
                                     <ul>
                                         <li>(Automated) cartography is focused mostly on the visualization aspects of GIScience and has established itself as its own research area. In recent years the computational aspects of thematic mapping have received considerable interest. Maps are effective tools for communicating information and hence spatial data (and also some non- spatial data) can be displayed well using maps. Thematic maps often depict a single theme or attribute, such as population, income, crime rate, or migration. There are many possibilities for creative projects with both an experimental and a theoretical competent in the area of automated cartography. </li>
                                         <li>Over the past years the availability of devices that can be used to track moving objects — GPS satellite systems, mobile phones, radio telemetry, surveillance cameras, RFID tags, and more - has increased dramatically, leading to an explosive growth in movement data. Objects being tracked range from animals (for behavioral studies) and cars (for traffic prediction), to hurricanes, sports players (for video analysis of games), and suspected terrorists. Naturally the goal is not only to track objects but also to extract information from the resulting data. The study of algorithms for the analysis and visualization of movement data is hence a rapidly expanding research area at the intersection of computational geometry, geographic information science, automated cartography, and information visualization. There is a broad spectrum of possible projects in this area, ranging from very fundamental and theoretical to purely experimental, with (nearly) any combination possible.</li>
@@ -233,13 +224,12 @@
                                 </div>
                                 <div id="archinfs">
                                     <h4>Architecture of information systems</h4>
-                                    <p>Contact person: dr. Natalia Sidorova<br>
-                                    The Architecture of Information Systems (AIS) research group investigates methods, techniques and tools for the design and analysis of Process-Aware Information Systems (PAIS), i.e., systems that support business processes (workflows) inside and between organizations. AIS is not only interested in these information systems and their architecture, but also model and analyze the business processes and organizations they support. The group aims at results that are highly original and applicable in real-life situations. The main three research lines of AIS are:</p>
+                                    <p>Contact person: dr. Natalia Sidorova<br> The Architecture of Information Systems (AIS) research group investigates methods, techniques and tools for the design and analysis of Process-Aware Information Systems (PAIS), i.e., systems that support business processes (workflows) inside and between organizations. AIS is not only interested in these information systems and their architecture, but also model and analyze the business processes and organizations they support. The group aims at results that are highly original and applicable in real-life situations. The main three research lines of AIS are:</p>
                                     <ul>
                                         <li>Process Modeling and Analysis. Models are commonly used to answer questions related to correctness and performance. One of the main goals here is to further improve verification techniques to check various properties such as soundness, data/resource soundness, accordance, controllability, and selected temporal properties. Pattern-based approaches are used for correctness-by-design. Another goal is to develop innovative simulation approaches that better reflect reality and that can be used in an operational setting while using process mining results.</li>
                                         <li>Process Mining. Process mining techniques are used to extract process-related information from event logs, e.g., to automatically discover models, check conformance, and augment existing models with additional insights extracted from some event log. The goals are to significantly improve the state-of-the-art in process discovery, to advance the state-of-the-art in conformance checking, and to predict problems, i.e., provide warnings based on historic information (e.g., a case will be late or an error is likely to occur).</li>
                                         <li>PAIS Technology. PAISs are used to manage and execute operational processes involving people, applications, and/or information sources. Examples are WFM (Workflow Management), BPM (Business Process Management), and ERP (Enterprise Resource Planning) systems. Increasingly, these systems are driven by models and produce high-quality event logs. We are interested in the artifacts used and produced by these systems (i.e., models and logs) as these are essential for testing the techniques developed in the two other research lines. For example, it is interesting to convert and verify process models expressed in some particular industry language. The same holds of course for event logs. Service-orientation plays an important role here and this new architectural style poses new research questions.</li>
-                                    </ul> 
+                                    </ul>
                                     <p>Relevant courses are:</p>
                                     <ul>
                                         <li>Business process management systems (2IMI10)</li>
@@ -254,15 +244,13 @@
                                 </div>
                                 <div id="webeng">
                                     <h4>Web engineering</h4>
-                                    <p>Contact person: prof. Paul De Bra<br>
-                                    The focus of WE is on the study of concepts and technologies that areused to store, access, manage and retrieve information. Information often comesfrom several sources that each contain a wealth of information ofwhich only a small subset is of interest to any particular user oruser group.</p>
+                                    <p>Contact person: prof. Paul De Bra<br> The focus of WE is on the study of concepts and technologies that areused to store, access, manage and retrieve information. Information often comesfrom several sources that each contain a wealth of information ofwhich only a small subset is of interest to any particular user oruser group.</p>
                                     <ul>
                                         <li>Database systems are needed to store, maintain, and efficiently query the data; data can come in different flavors from unstructured text-data, semi-structured XML data to structured databases;</li>
                                         <li>Datamining and information retrieval automate the extraction of information and knowledge from large amounts of data; often so much data is collected that manual analysis is no longer possible. Data mining and information retrieval assist data analysts in locating relevant information and patterns in the data.</li>
                                         <li>Adaptation, or automatic personalization, must ensure that each user is guided (automatically) to the information that is relevant to him or her, resulting in Adaptive Hypermedia systems. Adaptive Hypermedia is studied at the conceptual and the practical level: the former is done through the study of Adaptive Hypermedia Reference Models, the latter through the development of the "Generic Adaptation Language and Engine'' GALE, a general-purpose web-based adaptive hypermedia system.</li>
                                     </ul>
-                                    <p>The WE group focuses research in these overlapping domains aimed at the efficient disclosure of large data repositories in a user-friendlymanner, and on the extraction of knowledge (and value) from data.<br>
-                                    Relevant courses are:</p>
+                                    <p>The WE group focuses research in these overlapping domains aimed at the efficient disclosure of large data repositories in a user-friendlymanner, and on the extraction of knowledge (and value) from data.<br> Relevant courses are:</p>
                                     <ul>
                                         <li>Web information retrieval and data mining (2IMW15)</li>
                                         <li>Foundations of Data Mining (2IMW30)</li>
@@ -275,8 +263,7 @@
                                 </div>
                                 <div id="formsys">
                                     <h4>Formal system analysis</h4>
-                                    <p>Contact person: prof. Jan Friso Groote<br>
-                                    The focus of the specialization FSA is on modeling and verifying behavior of systems and programs. Behavior must be understood as all possible actions that a system can consecutively perform during its lifetime.</p>
+                                    <p>Contact person: prof. Jan Friso Groote<br> The focus of the specialization FSA is on modeling and verifying behavior of systems and programs. Behavior must be understood as all possible actions that a system can consecutively perform during its lifetime.</p>
                                     <ul>
                                         <li>Computer-based systems are so complex, that it is impossible to program them without understanding how the different software components communicate, and what the responsibilities of these parts are. By modeling the behavior, these responsibilities are made explicit. Due to the complexity of the matter at hand, it is also non-trivial to get these behavioral models correct. For this purpose we use analysis techniques. Primarily, these are used to find flaws in the model, and ultimately these are employed to show that the modeled behavior satisfies all the requirements. For instance, a data communication protocol must not lose messages, and a firewall should under no circumstance let an intruder pass. With current modeling techniques it is no problem to model the communication patterns of even the most complex systems. Using modal formulas most requirements can be formulated in a formal, precise way. Using one of the many existing process equivalences, it is very well possible to state the behavioral equivalence between implementations and specifications. So, in general, it is not really problematic (but sometimes hard) to formulate the properties that a system ought to have.</li>
                                         <li>The current technological bottleneck is our capability to prove that a requirement holds for a given model (the model checking problem) or that two processes are actually equivalent (the equivalence checking problem). The major research activity of this group is to increase the strength of the analysis tools. The core problem of the analysis of behavior is the state space explosion problem. There are so many states in which a system can end up, that it is generally impossible to explore these all individually. For this purpose, we must use so-called symbolic techniques to enable the verification. These techniques come from the realm of automatic reasoning, term rewriting and computer assisted theorem checking. Also, state space reduction techniques (abstract interpretation, confluence checking) are relevant to reduce the problem size. Visualization turns out to be a relevant tool, to detect unforeseen problems and to increase insight in the behavior. Knowledge of algorithms, including I/O-efficient algorithms is relevant, to construct analysis tools capable of dealing with huge state spaces.</li>
@@ -301,11 +288,7 @@
                                 </div>
                                 <div id="sysarch">
                                     <h4>System architeceture and networking</h4>
-                                    <p>Contact person: dr. Rudolf Mak<br>
-                                    Imagine just any electronic system that is not somehow networked with other systems. Found one? Must be a pretty boring system then, since one of the fascinating developments of the last years is that devices of all form factors and functionality become connected. In our group we study parallel and distributed systems with an emphasis on pervasive systems or, as we call it, Resource Constrained Networked Embedded Systems.<br>
-                                    Master thesis assignments are related to the research topics of SAN, which focus on distributed aspects of RCNES (middleware and networked services), on the platform (predictable and reliable resource management) and on efficient embedded computations (typical for signal processing). Research questions are, for example, how to build and manage applications composed from distributed services, and how to perform distributed resource management.<br>
-                                    We pay a lot of attention to quality aspects, which include performance, predictability, dependability, programmability and security. A dominant issue in our work is therefore the architecture of these RCNES, in particular the software architecture, as this is where the quality aspects are addressed. We relate our work to application domains which we see as vehicles for our research. Example application domains include distributed media systems, wireless sensor networks, automotive electronics and, more recently, lighting. Much of this work is done in cooperation with industry through national and international projects. Have a look at our research page (<a href="http://w3.win.tue.nl/nl/onderzoek/onderzoek_informatica/system_architecture_and_networking" target="_blank">http://w3.win.tue.nl/nl/onderzoek/onderzoek_informatica/system_architecture_and_networking</a>) to see the projects we are involved in.
-                                    Relevant courses are:</p>
+                                    <p>Contact person: dr. Rudolf Mak<br> Imagine just any electronic system that is not somehow networked with other systems. Found one? Must be a pretty boring system then, since one of the fascinating developments of the last years is that devices of all form factors and functionality become connected. In our group we study parallel and distributed systems with an emphasis on pervasive systems or, as we call it, Resource Constrained Networked Embedded Systems.<br> Master thesis assignments are related to the research topics of SAN, which focus on distributed aspects of RCNES (middleware and networked services), on the platform (predictable and reliable resource management) and on efficient embedded computations (typical for signal processing). Research questions are, for example, how to build and manage applications composed from distributed services, and how to perform distributed resource management.<br> We pay a lot of attention to quality aspects, which include performance, predictability, dependability, programmability and security. A dominant issue in our work is therefore the architecture of these RCNES, in particular the software architecture, as this is where the quality aspects are addressed. We relate our work to application domains which we see as vehicles for our research. Example application domains include distributed media systems, wireless sensor networks, automotive electronics and, more recently, lighting. Much of this work is done in cooperation with industry through national and international projects. Have a look at our research page (<a href="http://w3.win.tue.nl/nl/onderzoek/onderzoek_informatica/system_architecture_and_networking" target="_blank">http://w3.win.tue.nl/nl/onderzoek/onderzoek_informatica/system_architecture_and_networking</a>) to see the projects we are involved in. Relevant courses are:</p>
                                     <ul>
                                         <li>Real-time systems (2IMN20)</li>
                                         <li>Architecture of distributed systems (2IMN10) </li>
@@ -327,14 +310,7 @@
                                 </div>
                                 <div id="softeng">
                                     <h4>Software Engineering and Technology</h4>
-                                    <p>Contact person: prof. Mark van den Brand<br>
-                                    Software has become one of the key enablers of modern society. In almost all activities that we do as human beings software plays a role, whether this is social media, buying goods, monitoring our sports activities, or in the production of goods.<br>
-                                    The high-tech industry, in particular, is facing two trends. First of all, the amount of software is growing rapidly. Secondly, the quality of software is decreasing. These trends result in new research challenges. How to develop more high quality software in less time? How to guarantee the quality of the software? How to deal with the huge amount of existing software? The answers to these questions are not straightforward. A common theme in the answer to these questions is model driven software engineering. Models provide a higher level of abstraction and thus allow the specification of more functionality in less code. The models can also be used as starting point for simulation and verification.<br>
-                                    Finally, existing software can be analysed and the underlying models can be extracted. The research focus of the research group SET is on model based software development and on software evolution.<br>
-                                    The field of model based software development is broad. We concentrate on the development of tooling to support the development of models in domain specific formalisms using meta-modeling techniques. Research on tooling for model based software development includes the modularity of meta-models, the description of semantics of domain specific languages, the verification of model transformation formalisms, and the co-evolution of models and meta-models. The ultimate goal is to provide a tool set which provides high fidelity software generation.<br>
-                                    As the process software evolution encompasses the entire life cycle of a software system, from inception to phase out. As research domain software evolution aims at obtaining insights in how and why does software evolve as well as at translating those insights into techniques for assessing system evolvability and facilitating evolution. Given the fact that software evolution is an activity carried by humans, on top of technological challenges software evolution research also considers social and socio-technical ones.<br>
-                                    Lion's share of the software evolution research is empirical in nature, i.e., it requires combination of software development skills with data analysis skills.<br>
-                                    Relevant courses are:</p>
+                                    <p>Contact person: prof. Mark van den Brand<br> Software has become one of the key enablers of modern society. In almost all activities that we do as human beings software plays a role, whether this is social media, buying goods, monitoring our sports activities, or in the production of goods.<br> The high-tech industry, in particular, is facing two trends. First of all, the amount of software is growing rapidly. Secondly, the quality of software is decreasing. These trends result in new research challenges. How to develop more high quality software in less time? How to guarantee the quality of the software? How to deal with the huge amount of existing software? The answers to these questions are not straightforward. A common theme in the answer to these questions is model driven software engineering. Models provide a higher level of abstraction and thus allow the specification of more functionality in less code. The models can also be used as starting point for simulation and verification.<br> Finally, existing software can be analysed and the underlying models can be extracted. The research focus of the research group SET is on model based software development and on software evolution.<br> The field of model based software development is broad. We concentrate on the development of tooling to support the development of models in domain specific formalisms using meta-modeling techniques. Research on tooling for model based software development includes the modularity of meta-models, the description of semantics of domain specific languages, the verification of model transformation formalisms, and the co-evolution of models and meta-models. The ultimate goal is to provide a tool set which provides high fidelity software generation.<br> As the process software evolution encompasses the entire life cycle of a software system, from inception to phase out. As research domain software evolution aims at obtaining insights in how and why does software evolve as well as at translating those insights into techniques for assessing system evolvability and facilitating evolution. Given the fact that software evolution is an activity carried by humans, on top of technological challenges software evolution research also considers social and socio-technical ones.<br> Lion's share of the software evolution research is empirical in nature, i.e., it requires combination of software development skills with data analysis skills.<br> Relevant courses are:</p>
                                     <ul>
                                         <li>Generic language technology (2IMP20)</li>
                                         <li>Software evolution (2IMP25)</li>
@@ -348,11 +324,7 @@
                                 </div>
                                 <div id="visual">
                                     <h4>Visualisation</h4>
-                                    <p>Contact person: dr. Huub van de Wetering<br>
-                                    Data visualization aims to provide insight in large data sets by using interactive graphics, exploiting the unique capabilities of the human visual system to detect patterns and structures. By presenting data visually, people can see unexpected relations; by offering interaction they are enabled to explore huge data sets, driven by their interest.<br>
-                                    The focus of this specialization is on the development of new methods and techniques for interactive visualization. The main fields of interest are information visualization and visual analytics, both aiming at insight in abstract data, such as tree structures, networks, and multivariate data, for applications in areas as software engineering, bioinformatics, health care, security, and traffic analysis. Our aims are to develop new visual representations and interaction methods, and to evaluate these on real world use cases to verify if they are effective. Some typical challenges are dealing with combinations of different data types, integration of methods from machine learning, handling dynamic data, and understanding the needs and wants of users. Another interest is in high performance scientific computing: exploiting the power of GPUs for visualization and computer graphics, with physically based animation and 3D shape analysis as typical applications.<br>
-                                    Furthermore, in cooperation with the Centrum voor Wiskunde en Informatica (CWI) virtual reality systems are studied. Typical topics include the design and evaluation of 3D interactive techniques, and methods for improving image quality in virtual reality displays.<br>
-                                    Relevant courses for the VIS specialization are:</p>
+                                    <p>Contact person: dr. Huub van de Wetering<br> Data visualization aims to provide insight in large data sets by using interactive graphics, exploiting the unique capabilities of the human visual system to detect patterns and structures. By presenting data visually, people can see unexpected relations; by offering interaction they are enabled to explore huge data sets, driven by their interest.<br> The focus of this specialization is on the development of new methods and techniques for interactive visualization. The main fields of interest are information visualization and visual analytics, both aiming at insight in abstract data, such as tree structures, networks, and multivariate data, for applications in areas as software engineering, bioinformatics, health care, security, and traffic analysis. Our aims are to develop new visual representations and interaction methods, and to evaluate these on real world use cases to verify if they are effective. Some typical challenges are dealing with combinations of different data types, integration of methods from machine learning, handling dynamic data, and understanding the needs and wants of users. Another interest is in high performance scientific computing: exploiting the power of GPUs for visualization and computer graphics, with physically based animation and 3D shape analysis as typical applications.<br> Furthermore, in cooperation with the Centrum voor Wiskunde en Informatica (CWI) virtual reality systems are studied. Typical topics include the design and evaluation of 3D interactive techniques, and methods for improving image quality in virtual reality displays.<br> Relevant courses for the VIS specialization are:</p>
                                     <ul>
                                         <li>Visualization (2IMV20)</li>
                                         <li>Geometric algorithms (2IMA15)</li>
@@ -369,10 +341,7 @@
                                 </div>
                                 <div id="security">
                                     <h4>Security</h4>
-                                    <p>Contact person: prof. Sandro Etalle<br>
-                                    The interconnectivity and pervasiveness of computers and of embedded systems like PDAs and smart phones is not only determining new functionalities, but is also opening the way to increasingly sophisticated attacks. Indeed, in the last years the field of security has become one of the main focuses of computer science research around the globe. The recently established security group aims at contributing to a comprehensive framework for the engineering, the deployment and the maintenance of secure distributed systems, in which existing and new techniques are harmonized and integrated. The group focuses on distributed system security: a broad area that deals with the security of embedded systems as well as of the ICT infrastructures. Prominent subfields are: the specification and the enforcement of usage policies of critical systems, verification of security protocols, trust management.<br>
-                                    The group cooperates actively with the Radboud University in the TRU/e cyber security master.<br>
-                                    Relevant courses are:</p>
+                                    <p>Contact person: prof. Sandro Etalle<br> The interconnectivity and pervasiveness of computers and of embedded systems like PDAs and smart phones is not only determining new functionalities, but is also opening the way to increasingly sophisticated attacks. Indeed, in the last years the field of security has become one of the main focuses of computer science research around the globe. The recently established security group aims at contributing to a comprehensive framework for the engineering, the deployment and the maintenance of secure distributed systems, in which existing and new techniques are harmonized and integrated. The group focuses on distributed system security: a broad area that deals with the security of embedded systems as well as of the ICT infrastructures. Prominent subfields are: the specification and the enforcement of usage policies of critical systems, verification of security protocols, trust management.<br> The group cooperates actively with the Radboud University in the TRU/e cyber security master.<br> Relevant courses are:</p>
                                     <ul>
                                         <li>Seminar information security technology (2IMS00)</li>
                                         <li>Verification of security protocols (2IMS15)</li>
@@ -387,6 +356,46 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="submenu">
+
+
+
+
+
+
+
+
+
+                        <ul>
+                            <li>
+                                <a href="#algorithms" class="page-scroll">Algorithms</a>
+                            </li>
+                            <li>
+                                <a href="#apllalgo" class="page-scroll">Applied geometric algorithms</a>
+                            </li>
+                            <li>
+                                <a href="#archinfs" class="page-scroll">Architecture of information systems</a>
+                            </li>
+                            <li>
+                                <a href="#webeng" class="page-scroll">Web Engineering</a>
+                            </li>
+                            <li>
+                                <a href="#formsys" class="page-scroll">Formal system analysis</a>
+                            </li>
+                            <li>
+                                <a href="#sysarch" class="page-scroll">System architecture and networking</a>
+                            </li>
+                            <li>
+                                <a href="#softeng" class="page-scroll">Software Engineering and Technology</a>
+                            </li>
+                            <li>
+                                <a href="#visual" class="page-scroll">Visualization</a>
+                            </li>
+                            <li>
+                                <a href="#security" class="page-scroll">Security</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
