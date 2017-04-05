@@ -7,7 +7,7 @@ $(document).ready(function () {
         var major = localStorage.getItem("major");
         if (window.location.href.match("index.html")) {
             window.alert("major: " + major);
-            if (major === "cse" || major === "pt" || major === "cse_mse" || major === "hti") {
+            if (major === "cse" || major === "pt" || major === "cse_msc" || major === "hti") {
                 switch (major) {
                 case "cse":
                     window.location.replace("http://wwwis.win.tue.nl/~dblh3_2017/docs/general_aboutcse.html");
@@ -44,7 +44,7 @@ $(document).ready(function () {
         });
         $("#cse_msc").click(function () {
             window.alert("cs_msetest is clicked");
-            major = "cse_mse";
+            major = "cse_msc";
             localStorage.setItem("major", major);
             window.location.replace('main.html');
         });
