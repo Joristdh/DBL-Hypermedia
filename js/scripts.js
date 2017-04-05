@@ -17,7 +17,7 @@ $(document).ready(function () {
         $("#wrapper.toggled #sidebar-wrapper.current").css("padding-left", "250px");
         $("#wrapper.toggled #sidebar-wrapper.main").css("width", "250px");
     });
-
+   
     $(".fold").click(function () {
         $(".arrow, .arrowc").rotate({
             duration: 600,

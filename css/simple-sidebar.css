@@ -17,6 +17,16 @@ h4 {
     padding-top: 25px;
 }
 
+h4 a {
+    display: block;
+    color: black;
+    
+}
+
+.acord {
+    float: right
+}
+
 #menu-toggle {
     position: absolute;
 }
@@ -266,7 +276,8 @@ div.sidebar-footer a {
     background: none;
 }
 
-#submenu {
+.submenu {
+    display: none;
     background: #fff;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
@@ -276,18 +287,18 @@ div.sidebar-footer a {
     padding-top: 5px;
 }
 
-#submenu a {
+.submenu a {
     display: block;
     padding: 10px;
     color: black;
         
 }
 
-#submenu a:hover {
+.submenu a:hover {
     text-decoration: none;
 }
 
-#submenu li:hover{
+.submenu li:hover{
     background: rgba(0, 0, 0, 0.05);
 }
 @keyframes sideBar {
@@ -310,6 +321,10 @@ div.sidebar-footer a {
         text-align: center;
         padding-left: 0;
         padding-top: 0;
+    }
+    
+    .submenu {
+        display: block;
     }
     /* sidebar styling */
     #wrapper {
