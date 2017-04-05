@@ -13,6 +13,10 @@ h1 {
     padding-left: 25%;
 }
 
+h4 {
+    padding-top: 25px
+}
+
 #menu-toggle {
     position: absolute;
 }
@@ -279,8 +283,11 @@ div.sidebar-footer a {
         
 }
 
-#submenu li:hover{
+#submenu a:hover {
     text-decoration: none;
+}
+
+#submenu li:hover{
     background: rgba(0, 0, 0, 0.05);
 }
 @keyframes sideBar {
