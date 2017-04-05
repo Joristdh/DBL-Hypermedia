@@ -8,12 +8,9 @@ $(document).ready(function () {
     if (window.innerWidth < 768) {
         $("#wrapper").removeClass("toggled");
     }
-    if (sessionStorage.ani != 0) {
-        sessionStorage.ani = 1;
-    }
-    if (sessionStorage.ani == 1) {
+    if (!sessionStorage.ani) {
         $("#sidebar-wrapper.current").css("animation", "0.4s ease-out 0s 1 sideBar");
-        sessionStorage.ani = 0;
+        sessionStorage.ani = 1;
     }
     $("#back").click(function () {
         $("#wrapper.toggled #sidebar-wrapper.current").css("padding-left", "250px");
