@@ -5,6 +5,7 @@ $(document).ready(function () {
     $(".arrowc").rotate({
         angle: 180
     });
+    $(".collapse a").prepend("&nbsp;&nbsp;")
     if (window.innerWidth < 768) {
         $("#wrapper").removeClass("toggled");
     }
