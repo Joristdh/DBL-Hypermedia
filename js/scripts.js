@@ -23,7 +23,7 @@ $(document).ready(function () {
     });
    
     $(".bodyfold").click(function () {
-        if (window.innerWidth < 768) {
+        if (window.innerWidth < 1200) {
             $(this).siblings(".collapse").collapse("toggle");
         }
     });
