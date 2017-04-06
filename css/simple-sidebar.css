@@ -24,7 +24,8 @@ h4 a {
 }
 
 #menu-toggle {
-    position: absolute;
+    position: fixed;
+    padding-left: 15px;
 }
 
 ul {
@@ -322,11 +323,6 @@ a.bodyfold {
     display: none;
 }
 
-@media(max-width:1200px) {
-    .bodyarrow {
-        display:inherit;
-    }
-}
 
 @media(min-width:768px) {
     /* basic styling for big screens */
@@ -366,4 +362,17 @@ a.bodyfold {
     #menu-toggle {
         display: none;
     }
+}
+
+@media(max-width:1199px) {
+    .bodyarrow {
+        display:inherit;
+    }
+    .col-lg-12 {
+        max-width: 90%;
+        margin-left: 5%;
+        padding: 0 3% 15px 3%;
+    }
+    
+    
 }
