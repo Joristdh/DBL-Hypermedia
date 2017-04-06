@@ -9,19 +9,19 @@ $(document).ready(function () {
         if (major === "cse" || major === "pt" || major === "cse_msc" || major === "hti" || major === "pre_cse_msc" || major === "pre_hti") {
             switch (major) {
                 case "cse":
-                    window.location.replace("/docs/general_aboutcse.html");
+                    window.location.replace("docs/general_aboutcse.html");
                     break;
                 case "pt":
-                    window.location.replace('/docs/PT_general.html');
+                    window.location.replace('docs/PT_general.html');
                     break;
                 case "cse_msc":
-                    window.location.replace("/docs/msc_general_about.html");
+                    window.location.replace("docs/msc_general_about.html");
                     break;
                 case "hti":
                     window.location.replace('main.html');
                     break;
                 case "pre_cse_msc":
-                    window.location.replace('/docs/premsc_cse.html');
+                    window.location.replace('docs/premsc_cse.html');
                     break;
                 case "pre_hti":
                     window.location.replace('main.html');
