@@ -150,7 +150,6 @@ img.center {
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    overflow: hidden;
 }
 
 #wrapper.toggled #sidebar-wrapper {
@@ -354,6 +353,7 @@ a.bodyfold {
     }
     #sidebar-wrapper {
         width: 250px;
+        overflow: hidden;
     }
     #wrapper.toggled #sidebar-wrapper {
         width: 250px;
