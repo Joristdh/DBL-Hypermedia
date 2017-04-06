@@ -22,6 +22,22 @@ $(document).ready(function () {
         $("#wrapper.toggled #sidebar-wrapper.main").css("width", "250px");
     });
    
+    $(".bodyfold").click(function () {
+        if (window.innerWidth < 768) {
+            $(this).siblings(".collapse").collapse("toggle");
+        }
+    });
+    var mobile = 1;
+    setInterval(function () {
+        
+        if (window.innerWidth >= 768) {
+            $(".collapse.body").collapse("show");
+            mobile = 1;
+        } else if (mobile === 1) {
+            $(".collapse.body").collapse("hide");
+            mobile = 0;
+        }
+    }, 100);
     $(".fold").click(function () {
         $(".arrow, .arrowc").rotate({
             duration: 600,

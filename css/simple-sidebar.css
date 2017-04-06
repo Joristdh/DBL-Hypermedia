@@ -10,11 +10,12 @@
 h1 {
     color: #333;
     font-weight: bolder;
-    padding-left: 25%;
+    padding-left: 10%;
+    font-size: 3em
 }
 
 h4 {
-    padding-top: 25px;
+    padding-top: 20px;
 }
 
 h4 a {
@@ -38,7 +39,7 @@ ul {
 
 body {
     overflow-x: hidden;
-    background-color: #f1f1f1;
+    background-color: #fafafa;
 }
 
 table {
@@ -90,6 +91,9 @@ table tbody tr:nth-child(odd) {
 img.center {
     display: block;
     margin: 0 auto;
+}
+.col-lg-12 img {
+    margin-left: -20px;
 }
 
 
@@ -316,6 +320,20 @@ div.sidebar-footer a {
     margin-left: 0px;
 }
 
+a#bodyfold{
+    display: block;
+    color: #333;
+}
+
+.bodyarrow {
+    float: right;
+    padding-top: 25px;
+    margin-right: 5%
+}
+
+.bodyarrow img {
+}
+
 @media(min-width:768px) {
     /* basic styling for big screens */
     .col-lg-12 {
@@ -327,6 +345,14 @@ div.sidebar-footer a {
         text-align: center;
         padding-left: 0;
         padding-top: 0;
+    }
+    .collapse.in.body,
+    .collapse.body {
+        display: block;
+    }
+    
+    .bodyarrow{
+        display: none;
     }
     
     .submenu {

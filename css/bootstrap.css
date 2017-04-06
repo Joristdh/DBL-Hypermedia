@@ -3734,7 +3734,7 @@ fieldset[disabled] a.btn {
 .btn-default:focus,
 .btn-default.focus {
     color: #333;
-    background-color: #e6e6e6;
+    background-color: #951992;
     border-color: #8c8c8c;
 }
 
@@ -3742,6 +3742,8 @@ fieldset[disabled] a.btn {
     color: #333;
     background-color: #e6e6e6;
     border-color: #adadad;
+    
+    
 }
 
 .btn-default:active,
@@ -4159,6 +4161,7 @@ fieldset[disabled] .btn-link:focus {
     font-size: 18px;
     line-height: 1.3333333;
     border-radius: 6px;
+    text-decoration: none;
 }
 
 .btn-sm,
