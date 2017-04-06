@@ -18,13 +18,13 @@ $(document).ready(function () {
                     window.location.replace("docs/msc_general_about.html");
                     break;
                 case "hti":
-                    window.location.replace('main.html');
+                    window.location.replace('docs/main.html');
                     break;
                 case "pre_cse_msc":
                     window.location.replace('docs/premsc_cse.html');
                     break;
                 case "pre_hti":
-                    window.location.replace('main.html');
+                    window.location.replace('docs/main.html');
                     break;
                 case "reset":
                     window.location.replace('index.html');
