@@ -30,7 +30,7 @@ $(document).ready(function () {
     var mobile = 1;
     setInterval(function () {
         
-        if (window.innerWidth >= 768) {
+        if (window.innerWidth >= 1200) {
             $(".collapse.body").collapse("show");
             mobile = 1;
         } else if (mobile === 1) {
