@@ -154,7 +154,6 @@ img.center {
 
 #wrapper.toggled #sidebar-wrapper {
     width: 250px;
-    overflow: hidden;
 }
 
 #wrapper.toggled #sidebar-wrapper.current {
