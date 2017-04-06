@@ -55,7 +55,7 @@ $(document).ready(function () {
             });
         }
 
-        $(".collapse").collapse('hide');
+        $("li>.collapse").collapse('hide');
         $(this).siblings(".collapse").collapse("toggle");
     });
     
