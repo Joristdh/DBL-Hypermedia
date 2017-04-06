@@ -6,6 +6,12 @@
 
 
 /* basic styling */
+html,
+body {
+    position: relative;
+    overflow-x: hidden;
+    height: 100%;
+}
 
 h1 {
     color: #333;
@@ -22,7 +28,6 @@ h4 a {
     display: block;
     color: black;
 }
-
 #menu-toggle {
     position: fixed;
     padding-left: 15px;
@@ -34,7 +39,6 @@ ul {
 }
 
 body {
-    overflow-x: hidden;
     background-color: #fafafa;
 }
 
@@ -124,10 +128,13 @@ img.center {
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
+    
 }
 
 #wrapper.toggled {
-    padding-left: 250px;
+    padding-left: 0;
+    margin-left: 250px;
+    
 }
 
 #sidebar-wrapper {
