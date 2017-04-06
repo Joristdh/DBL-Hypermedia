@@ -3,32 +3,35 @@
 
 $(document).ready(function () {
     "use strict";
-    $("#a").click(function () {
-        alert("test");
-    });
     if (typeof (Storage) !== "undefined") {
         var major = localStorage.getItem("major");
-            //window.alert("major: " + major);
-            if (major === "cse" || major === "pt" || major === "cse_msc" || major === "hti") {
-                switch (major) {
+        //window.alert("major: " + major);
+        if (major === "cse" || major === "pt" || major === "cse_msc" || major === "hti" || major === "pre_cse_msc" || major === "pre_hti") {
+            switch (major) {
                 case "cse":
-                    window.location.replace("http://wwwis.win.tue.nl/~dblh3_2017/docs/general_aboutcse.html");
+                    window.location.replace("/docs/general_aboutcse.html");
                     break;
                 case "pt":
-                    window.location.replace('main.html');
+                    window.location.replace('/docs/PT_general.html');
                     break;
                 case "cse_msc":
-                    window.location.replace("http://wwwis.win.tue.nl/~dblh3_2017/docs/msc_general_about.html");
+                    window.location.replace("/docs/msc_general_about.html");
                     break;
                 case "hti":
+                    window.location.replace('main.html');
+                    break;
+                case "pre_cse_msc":
+                    window.location.replace('/docs/premsc_cse.html');
+                    break;
+                case "pre_hti":
                     window.location.replace('main.html');
                     break;
                 case "reset":
                     window.location.replace('index.html');
                     break;
-                }
             }
-        
+        }
+
         $("#cstest").click(function () {
             //window.alert("cstest is clicked");
             major = "cse";
@@ -58,6 +61,18 @@ $(document).ready(function () {
             major = "reset";
             localStorage.setItem("major", major);
             window.location.replace("index.html");
+        });
+        $("#pre_cse_msc").click(function () {
+            //window.alert("htitest is clicked");
+            major = "hti";
+            localStorage.setItem("major", major);
+            window.location.replace('main.html');
+        });
+        $("#pre_hti").click(function () {
+            //window.alert("htitest is clicked");
+            major = "hti";
+            localStorage.setItem("major", major);
+            window.location.replace('main.html');
         });
     } else {
         window.alert("Your device does not have local storage support");
