@@ -6,12 +6,6 @@
 
 
 /* basic styling */
-html,
-body {
-    position: relative;
-    overflow-x: hidden;
-    height: 100%;
-}
 
 h1 {
     color: #333;
@@ -28,6 +22,7 @@ h4 a {
     display: block;
     color: black;
 }
+
 #menu-toggle {
     position: fixed;
     padding-left: 15px;
@@ -99,26 +94,30 @@ img.center {
 }
 
 .submenu {
-        display: block;
-        background: #fff;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-        transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-        border-radius: 3px;
-        position: fixed;
-        padding-top: 5px;
-        left: 72%;
-    }
-    .submenu a {
-        display: block;
-        padding: 10px;
-        color: black;
-    }
-    .submenu a:hover {
-        text-decoration: none;
-    }
-    .submenu li:hover {
-        background: rgba(0, 0, 0, 0.05);
-    }
+    display: block;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    border-radius: 3px;
+    position: fixed;
+    padding-top: 5px;
+    left: 72%;
+}
+
+.submenu a {
+    display: block;
+    padding: 10px;
+    color: black;
+}
+
+.submenu a:hover {
+    text-decoration: none;
+}
+
+.submenu li:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
 
 /* Toggle Styles */
 
@@ -128,13 +127,11 @@ img.center {
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    
 }
 
 #wrapper.toggled {
     padding-left: 0;
     margin-left: 250px;
-    
 }
 
 #sidebar-wrapper {
@@ -154,7 +151,6 @@ img.center {
 
 #wrapper.toggled #sidebar-wrapper {
     width: 250px;
-    
 }
 
 #wrapper.toggled #sidebar-wrapper.current {
@@ -329,7 +325,6 @@ a.bodyfold {
     display: none;
 }
 
-
 @media(min-width:768px) {
     /* basic styling for big screens */
     .col-lg-12 {
@@ -343,8 +338,6 @@ a.bodyfold {
         padding-left: 0;
         padding-top: 0;
     }
-    
-    
     /* sidebar styling */
     #wrapper {
         padding-left: 250px;
@@ -373,14 +366,18 @@ a.bodyfold {
 }
 
 @media(max-width:1199px) {
+    html,
+    body {
+        position: relative;
+        overflow-x: hidden;
+        height: 100%;
+    }
     .bodyarrow {
-        display:inherit;
+        display: inherit;
     }
     .col-lg-12 {
         max-width: 90%;
         margin-left: 5%;
         padding: 0 3% 15px 3%;
     }
-    
-    
 }

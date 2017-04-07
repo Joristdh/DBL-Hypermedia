@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head> <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
-    <link rel='shortcut icon' type='image/x-icon' href='../img/favicon.ico'/>
+    <link rel='shortcut icon' type='image/x-icon' href='../img/favicon.ico' />
     <meta name="author" content="">
     <meta name="theme-color" content="#951992" />
 
@@ -28,6 +29,9 @@
     <script src="../js/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="../js/bootstrap.min.js"></script>
+    <!-- Scrolling Nav JavaScript -->
+    <script src="../js/jquery.easing.min.js"></script>
+    <script src="../js/scrolling-nav.js"></script>
     <!-- Rotation lib -->
     <script src="../js/jQueryRotate.js"></script>
     <!-- js -->
@@ -41,12 +45,12 @@
 
         <!-- Sidebar -->
         <div id="sidebar-wrapper" class="main">
-           <ul class="sidebar-nav">
+            <ul class="sidebar-nav">
                 <li class="sidebar-brand">
                     <a href="main.html">TU/e</a>
 
                 </li>
-                
+
                 <li>
                     <div class="fold">
                         <a href="##"><img class="arrow" src="../img/arrow.png"></a>
@@ -95,8 +99,8 @@
                 </li>
                 <li>
                     <div class="sidebar-back">
-                    <a href="#" id="back">&lt; Back</a>
-                        </div>
+                        <a href="#" id="back">&lt; Back</a>
+                    </div>
                 </li>
                 <li>
                     <a class="selected" href="../docs/general_aboutcse.html" id="general">Learning Objectives</a>
@@ -170,7 +174,7 @@
                     </li>
                 </div>
             </ul>
-            
+
         </div>
         <!-- /#sidebar-wrapper -->
 
@@ -185,34 +189,41 @@
 
                                 <h1>Major Computer Science &amp; Engineering</h1>
                                 <p>The Majors Software Science and Web Science are formally embedded in the Bachelor program Computer Science and Engineering (in Dutch: Technische Informatica). Consequently, after completing one of these Majors, you will receive the Bachelor's degree certificate in Computer Science and Engineering. </p>
-                                <h4>Program Objectives</h4>
-                                <p>The overall objective of the Bachelor program is to train and educate young professionals who are able to progress into an appropriate Master’s program and/or are prepared to embark upon a professional career in the field of Software Science or Web Science.<br>
-                                Students are therefore expected to:</p>
-                                <ol>
-                                    <li>acquire cognitive skills relating to computer science and engineering</li>
-                                    <li>acquire practical capabilities and skills relating to software design (the Web Science major focuses on complex internet-based applications, while the Software Science major is more concerned with technical applications)</li>
-                                    <li>acquire professional and generic academic skills</li>
-                                </ol>
-                                <h3>Program learning objectives</h3>
+                                <div id="objectives">
+                                    <img class="bodyarrow" src="../img/plus.png" width="15px">
+                                    <a href="##" class="bodyfold">
+                                        <h4>Program Objectives</h4>
+                                    </a>
+                                    <div class="collapse body">
+                                        <p>The overall objective of the Bachelor program is to train and educate young professionals who are able to progress into an appropriate Master’s program and/or are prepared to embark upon a professional career in the field of Software Science or Web Science.<br> Students are therefore expected to:</p>
+                                        <ol class="list">
+                                            <li>acquire cognitive skills relating to computer science and engineering</li>
+                                            <li>acquire practical capabilities and skills relating to software design (the Web Science major focuses on complex internet-based applications, while the Software Science major is more concerned with technical applications)</li>
+                                            <li>acquire professional and generic academic skills</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <h4>Program learning objectives</h4>
                                 <p>When you complete the program you are awarded a BSc degree, which is evidence of the following skills and competences you have acquired.</p>
                                 <h3>Basic knowledge and skills in computer science and engineering</h3>
-                                <ul>
+                                <ul class="list">
                                     <li>you are familiar with basic concepts related to Software Science, and with some other computer science domains</li>
                                     <li>you are able to prove theorems with respect to these basic concepts</li>
                                     <li>you have a thorough technical and scientific understanding of software and software systems</li>
                                     <li>you are able to rapidly deduct the essence of such systems, to acquaint yourself with those systems and to judge its merits</li>
                                 </ul>
-                                <h3>Software Design</h3>
-                                <ul>
+                                <h4>Software Design</h4>
+                                <ul class="list">
                                     <li>you are able to develop programs or software systems in an effective and structured manner, whereby those systems will perform the tasks expected of them accurately and efficiently</li>
                                     <li>you are able to analyze any software system in terms of its behavioral aspects</li>
                                     <li>further to this analysis, you are able to adapt and improve the system where necessary</li>
                                     <li>you are capable of documenting all findings and activities for future reference</li>
                                 </ul>
-                                <h3>General academic skills</h3>
-                                <ul>
+                                <h4>General academic skills</h4>
+                                <ul class="list">
                                     <li>you are able to acquire further knowledge in the field of computer science and to do so independently</li>
-                                    <li>you are aware of the position and importance of computer science within society, of the rapid changes, both positive and negative, which information technology can bring about, and are able to reflect on such changes</li><li>you are  able to work effectively within a team</li>
+                                    <li>you are aware of the position and importance of computer science within society, of the rapid changes, both positive and negative, which information technology can bring about, and are able to reflect on such changes</li>
+                                    <li>you are able to work effectively within a team</li>
                                     <li>you are able to impart information, ideas and solutions to either fellow specialists or a lay public</li>
                                     <li>you are able to plan and organize your own work within a software development project</li>
                                 </ul>
