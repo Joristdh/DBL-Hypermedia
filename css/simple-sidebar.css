@@ -87,6 +87,7 @@ table tbody tr:nth-child(odd) {
 img.center {
     display: block;
     margin: 0 auto;
+    padding-left: 20px;
 }
 
 .col-lg-12 img {
@@ -142,6 +143,7 @@ img.center {
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
+    overflow-x: hidden;
     background: #333;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -347,6 +349,7 @@ a.bodyfold {
         padding-left: 250px;
     }
     #sidebar-wrapper {
+        overflow: hidden;
         width: 250px;
     }
     #wrapper.toggled #sidebar-wrapper.main {
