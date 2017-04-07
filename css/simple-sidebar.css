@@ -162,7 +162,7 @@ img.center {
     padding-left: 0;
 }
 
-#wrapper.toggled #sidebar-wrapper.main {
+#wrapper #sidebar-wrapper.main {
     width: 0;
     z-index: 1001;
 }
@@ -338,6 +338,7 @@ a.bodyfold {
         padding-left: 0;
         padding-top: 0;
     }
+    
     /* sidebar styling */
     #wrapper {
         padding-left: 250px;
@@ -347,7 +348,9 @@ a.bodyfold {
     }
     #sidebar-wrapper {
         width: 250px;
-        overflow: hidden;
+    }
+    #wrapper.toggled #sidebar-wrapper.main {
+        width:  0;
     }
     #wrapper.toggled #sidebar-wrapper {
         width: 250px;
