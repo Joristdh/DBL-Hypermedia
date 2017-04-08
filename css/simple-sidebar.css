@@ -386,4 +386,8 @@ a.bodyfold {
         margin-left: 5%;
         padding: 0 3% 15px 3%;
     }
+    
+    .submenu {
+        display: none;
+    }
 }
