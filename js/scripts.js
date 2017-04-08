@@ -22,14 +22,13 @@ $(document).ready(function () {
         $("#wrapper #sidebar-wrapper.main").css("width", "250px");
     });
 
-    $(".bodyfold").click(function () {
+    $(".bodyfold, .bodyarrow").click(function () {
         if (window.innerWidth < 1200) {
             $(this).siblings(".collapse").collapse("toggle");
         }
     });
     var mobile = 1;
     setInterval(function () {
-
         if (window.innerWidth >= 1200) {
             $(".collapse.body").collapse("show");
             mobile = 1;
