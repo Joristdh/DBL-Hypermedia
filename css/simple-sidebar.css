@@ -386,7 +386,9 @@ a.bodyfold {
         margin-left: 5%;
         padding: 0 3% 15px 3%;
     }
-    
+    .col-lg-12 h1{
+        padding-top: 15px;
+    }
     .submenu {
         display: none;
     }
