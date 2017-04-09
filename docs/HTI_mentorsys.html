@@ -29,6 +29,9 @@
     <script src="../js/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="../js/bootstrap.min.js"></script>
+    <!-- Scrolling Nav JavaScript -->
+    <script src="../js/jquery.easing.min.js"></script>
+    <script src="../js/scrolling-nav.js"></script>
     <!-- Rotation lib -->
     <script src="../js/jQueryRotate.js"></script>
     <!-- js -->
@@ -101,7 +104,7 @@
                 </li>
                 <li>
                     <a href="../docs/HTI_msc_general_about.html">Learning Objectives </a>
-                </li>                
+                </li>
                 <li>
                     <a href="../docs/HTI_timeline.html">Timeline</a>
                 </li>
@@ -160,8 +163,8 @@
                     <a href="../docs/HTI_graduation_general.html">Graduation</a>
                     <ul class="collapse">
                         <li><a href="../docs/HTI_graduation_general.html">General</a></li>
-                        <li><a href="../docs/HTI_Master_Thesis.html">Master Thesis</a></li>
-                        <li><a href="../docs/HTI_GradReg.html">Graduation Regulations</a></li>
+                        <li><a href="../docs/HTI_GradReg.html">Thesis &amp; Regulations</a></li>
+                         
                     </ul>
                 </li>
                 <li>
@@ -193,134 +196,164 @@
                             <div>
 
                                 <h1>Master Human-Technology Interaction</h1>
+                                <h3>Coaching</h3>
                                 <div id="c11189">
-                                    <h3>Coaching</h3>
-                                    <h4>Mentor selection</h4>
-                                    <div>
-                                        <div class="ce-textpic ce-center ce-above">
-                                            <div class="ce-bodytext">
+                                    <img class="bodyarrow" src="../img/plus.png" width="15px">
+                                    <a href="##" class="bodyfold">
+                                        <h4>Mentor selection</h4>
+                                    </a>
+                                    <div class="collapse body">
 
-                                                <p>The student chooses the mentor based on his/her interests. Before the start of the first semester of the Master program, e.g. in the pre-master, last phase of the bachelor, the students identify research areas in which they are interested within the groups directly involved in the Master program. In order to make this process possible, mentors have to present the topics and methodology that is within their domain and capabilities. In the first week of the first semester, an HTI information event will take place in which students will be informed about the research and potential mentors.
-                                                </p>
-                                                <p>The event will be planned in the first week of the first&nbsp;semester. The meeting will be ended with an informal meeting facilitating first contact between students and mentors. During this information event students will receive information on:</p>
-                                                <ul>
-                                                    <li>The master program</li>
-                                                    <li>The area of expertise of each of the mentors</li>
-                                                    <li>The laboratory resources available at HTI</li>
-                                                </ul>
-                                                <p>It is advised that the student considers more than one mentor, as it may not be possible to be assigned to the desired mentor. Additionally it stimulates the student to acquire a broad perspective on the variety of research types and domains that are conducted at HTI. At the end of the first week of the first semester, following the information meeting and presentation of the potential mentors, students will have to provide a list of their first, second and third&nbsp;preference for a mentor. The mentors will be allotted to the students by the HTI master program coordinator. Those who have not provided a preference will be allotted a mentor by the coordinator.
-                                                </p>
-                                                <p>A list of available mentors and a short description of their research interests can be found in the .pdf of the slides presented at that meeting (will be available early September as a&nbsp;download on this webpage). Additional information about these researchers, their publications, and about the HTI group, its research project and lab facilities can be found at:&nbsp;<a href="https://webmail.tue.nl/owa/redir.aspx?SURL=UzPJZnAZge5LcbdAgQQiAu1hsnmR9YVRv5CPjtNkOs1lAUQsOI3SCGgAdAB0AHAAOgAvAC8AaAB0AGkALgBpAGUAaQBzAC4AdAB1AGUALgBuAGwALwA.&amp;URL=http%3a%2f%2fhti.ieis.tue.nl%2f" target="_blank">http://hti.ieis.tue.nl/</a>.&nbsp;This meeting will ideally take place before the end of the first quartile of the HTI Master program. This allow the student most flexibility in choosing (specialization) electives, that will start in the second quartile.
-                                                </p>
-                                                <p>Additional information about the research projects at HTI and publications of the HTI mentors can be found at:&nbsp;<a href="http://hti.ieis.tue.nl/" target="_blank">http://hti.ieis.tue.nl/</a>.</p>
+                                        <div>
+                                            <div class="ce-textpic ce-center ce-above">
+                                                <div class="ce-bodytext">
+
+                                                    <p>The student chooses the mentor based on his/her interests. Before the start of the first semester of the Master program, e.g. in the pre-master, last phase of the bachelor, the students identify research areas in which they are interested within the groups directly involved in the Master program. In order to make this process possible, mentors have to present the topics and methodology that is within their domain and capabilities. In the first week of the first semester, an HTI information event will take place in which students will be informed about the research and potential mentors.
+                                                    </p>
+                                                    <p>The event will be planned in the first week of the first&nbsp;semester. The meeting will be ended with an informal meeting facilitating first contact between students and mentors. During this information event students will receive information on:</p>
+                                                    <ul>
+                                                        <li>The master program</li>
+                                                        <li>The area of expertise of each of the mentors</li>
+                                                        <li>The laboratory resources available at HTI</li>
+                                                    </ul>
+                                                    <p>It is advised that the student considers more than one mentor, as it may not be possible to be assigned to the desired mentor. Additionally it stimulates the student to acquire a broad perspective on the variety of research types and domains that are conducted at HTI. At the end of the first week of the first semester, following the information meeting and presentation of the potential mentors, students will have to provide a list of their first, second and third&nbsp;preference for a mentor. The mentors will be allotted to the students by the HTI master program coordinator. Those who have not provided a preference will be allotted a mentor by the coordinator.
+                                                    </p>
+                                                    <p>A list of available mentors and a short description of their research interests can be found in the .pdf of the slides presented at that meeting (will be available early September as a&nbsp;download on this webpage). Additional information about these researchers, their publications, and about the HTI group, its research project and lab facilities can be found at:&nbsp;<a href="https://webmail.tue.nl/owa/redir.aspx?SURL=UzPJZnAZge5LcbdAgQQiAu1hsnmR9YVRv5CPjtNkOs1lAUQsOI3SCGgAdAB0AHAAOgAvAC8AaAB0AGkALgBpAGUAaQBzAC4AdAB1AGUALgBuAGwALwA.&amp;URL=http%3a%2f%2fhti.ieis.tue.nl%2f" target="_blank">http://hti.ieis.tue.nl/</a>.&nbsp;This meeting will ideally take place before the end of the first quartile of the HTI Master program. This allow the student most flexibility in choosing (specialization) electives, that will start in the second quartile.
+                                                    </p>
+                                                    <p>Additional information about the research projects at HTI and publications of the HTI mentors can be found at:&nbsp;<a href="http://hti.ieis.tue.nl/" target="_blank">http://hti.ieis.tue.nl/</a>.</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div id="c14175">
-                                        <h4>Initial meeting between mentor and student</h4>
-                                        <div class="ce-textpic ce-center ce-above">
-                                            <div class="ce-bodytext">
+                                        <img class="bodyarrow" src="../img/plus.png" width="15px">
+                                        <a href="##" class="bodyfold">
+                                            <h4>Initial meeting between mentor and student</h4>
+                                        </a>
+                                        <div class="collapse body">
 
-                                                <p>After the mentor has been allocated to a student, the following items are discussed in the initial meeting between the mentor and the student:</p>
-                                                <ul>
-                                                    <li>introduction of student and mentor, research interest, ways of working, definition of working relationship (frequencies of meeting, ways of reporting, etc.)</li>
-                                                    <li>the student's program, especially for the second and third semester, including elective courses and the international term.</li>
-                                                    <li>the student's development plan based on his/her assessment of the professional skills</li>
-                                                    <li>the student signs the&nbsp;<a href="http://studiegids.tue.nl/centrale-contentelementen/graduate-school/tekst-master-coaching/#c13661" target="_blank">Declaration concerning the TU/e Code of Scientific Conduct.</a></li>
-                                                    <li>the student fills out the relevant form for the selection of his/her electives, including the international term, and has this approved (signed) by the mentor.</li>
-                                                </ul>
-                                                <p>This meeting will ideally take place before the end of the first quartile of the first semester of the HTI master. This allows the student most flexibility in choosing the (specialisaton) elecives.</p>
+                                            <div class="ce-textpic ce-center ce-above">
+                                                <div class="ce-bodytext">
+
+                                                    <p>After the mentor has been allocated to a student, the following items are discussed in the initial meeting between the mentor and the student:</p>
+                                                    <ul>
+                                                        <li>introduction of student and mentor, research interest, ways of working, definition of working relationship (frequencies of meeting, ways of reporting, etc.)</li>
+                                                        <li>the student's program, especially for the second and third semester, including elective courses and the international term.</li>
+                                                        <li>the student's development plan based on his/her assessment of the professional skills</li>
+                                                        <li>the student signs the&nbsp;<a href="http://studiegids.tue.nl/centrale-contentelementen/graduate-school/tekst-master-coaching/#c13661" target="_blank">Declaration concerning the TU/e Code of Scientific Conduct.</a></li>
+                                                        <li>the student fills out the relevant form for the selection of his/her electives, including the international term, and has this approved (signed) by the mentor.</li>
+                                                    </ul>
+                                                    <p>This meeting will ideally take place before the end of the first quartile of the first semester of the HTI master. This allows the student most flexibility in choosing the (specialisaton) elecives.</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-
                                     <div id="c14176">
-                                        <h4>Overview contacts between student and mentor</h4>
-                                        <div class="ce-textpic ce-center ce-above">
-                                            <div class="ce-bodytext">
+                                        <img class="bodyarrow" src="../img/plus.png" width="15px">
+                                        <a href="##" class="bodyfold">
+                                            <h4>Overview contacts between student and mentor</h4>
+                                        </a>
+                                        <div class="collapse body">
 
-                                                <p>Contact between the student and the mentor will take place at least once per semester&nbsp; (ideally in the beginning of the semester) to keep track of the progress in the master program. Additional meetings between the mentor and the student will be planned separately.
-                                                </p>
-                                                <p>The first contact between the master student and mentor should take place before or at the start of the first semester of the HTI master. This is important, as the mentor will aid in selecting appropriate electives,&nbsp;For students entering the HTI master program in the second semester the information session and first meeting will take place in the first weeks of the second semester. </p>
-                                                <table class="contenttable" cellpadding="5" cellspacing="0">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>
-                                                                <p>Semester</p>
-                                                            </td>
-                                                            <td>
-                                                                <p>Period</p>
-                                                            </td>
-                                                            <td>
-                                                                <p>Action</p>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <p>1.1</p>
-                                                            </td>
-                                                            <td>
-                                                                <p>Q1</p>
-                                                            </td>
-                                                            <td>
-                                                                <p>Introductory meeting between the student and mentor, initial draft of the (specialisation) electives.</p>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>&nbsp;</td>
-                                                            <td>
-                                                                <p>Q2</p>
-                                                            </td>
-                                                            <td>
-                                                                <p>Finalizing the list of&nbsp;(specialisation) electives.</p>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <p>1.2</p>
-                                                            </td>
-                                                            <td>
-                                                                <p>Q1</p>
-                                                            </td>
-                                                            <td>
-                                                                <p>Preparing for the international semester.</p>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>&nbsp;</td>
-                                                            <td>
-                                                                <p>Final weeks</p>
-                                                            </td>
-                                                            <td>
-                                                                <p>Final preparation of international semester, including final selection of international courses. First preparation of the master’s thesis project (MTP) including deciding on a potential first supervisor. This could be the mentor, but a student might also decide to do his MTP in another group / with another mentor.</p>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <p>2.1</p>
-                                                            </td>
-                                                            <td>
-                                                                <p>Final weeks</p>
-                                                            </td>
-                                                            <td>
-                                                                <p>After returning from the international semester, the student reports on the international semester and the courses taken. A final decision on the MTP project and the first supervisor will be made.</p>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <p>2.2</p>
-                                                            </td>
-                                                            <td>&nbsp;</td>
-                                                            <td>Master thesis project</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
+                                            <div class="ce-textpic ce-center ce-above">
+                                                <div class="ce-bodytext">
+
+                                                    <p>Contact between the student and the mentor will take place at least once per semester&nbsp; (ideally in the beginning of the semester) to keep track of the progress in the master program. Additional meetings between the mentor and the student will be planned separately.
+                                                    </p>
+                                                    <p>The first contact between the master student and mentor should take place before or at the start of the first semester of the HTI master. This is important, as the mentor will aid in selecting appropriate electives,&nbsp;For students entering the HTI master program in the second semester the information session and first meeting will take place in the first weeks of the second semester. </p>
+                                                    <table class="contenttable" cellpadding="5" cellspacing="0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <p>Semester</p>
+                                                                </td>
+                                                                <td>
+                                                                    <p>Period</p>
+                                                                </td>
+                                                                <td>
+                                                                    <p>Action</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <p>1.1</p>
+                                                                </td>
+                                                                <td>
+                                                                    <p>Q1</p>
+                                                                </td>
+                                                                <td>
+                                                                    <p>Introductory meeting between the student and mentor, initial draft of the (specialisation) electives.</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>&nbsp;</td>
+                                                                <td>
+                                                                    <p>Q2</p>
+                                                                </td>
+                                                                <td>
+                                                                    <p>Finalizing the list of&nbsp;(specialisation) electives.</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <p>1.2</p>
+                                                                </td>
+                                                                <td>
+                                                                    <p>Q1</p>
+                                                                </td>
+                                                                <td>
+                                                                    <p>Preparing for the international semester.</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>&nbsp;</td>
+                                                                <td>
+                                                                    <p>Final weeks</p>
+                                                                </td>
+                                                                <td>
+                                                                    <p>Final preparation of international semester, including final selection of international courses. First preparation of the master’s thesis project (MTP) including deciding on a potential first supervisor. This could be the mentor, but a student might also decide to do his MTP in another group / with another mentor.</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <p>2.1</p>
+                                                                </td>
+                                                                <td>
+                                                                    <p>Final weeks</p>
+                                                                </td>
+                                                                <td>
+                                                                    <p>After returning from the international semester, the student reports on the international semester and the courses taken. A final decision on the MTP project and the first supervisor will be made.</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <p>2.2</p>
+                                                                </td>
+                                                                <td>&nbsp;</td>
+                                                                <td>Master thesis project</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="submenu">
+                        <ul>
+                            <li>
+                                <a href="#c11189" class="page-scroll">Mentor selection</a>
+                            </li>
+                            <li>
+                                <a href="#c14175" class="page-scroll">Initial meeting</a>
+                            </li>
+                            <li>
+                                <a href="#c14176" class="page-scroll">Overview contacts</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
