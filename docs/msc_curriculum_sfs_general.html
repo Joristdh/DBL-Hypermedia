@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head> <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
-    <link rel='shortcut icon' type='image/x-icon' href='../img/favicon.ico'/>
+    <link rel='shortcut icon' type='image/x-icon' href='../img/favicon.ico' />
     <meta name="author" content="">
     <meta name="theme-color" content="#951992" />
 
@@ -28,6 +29,9 @@
     <script src="../js/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="../js/bootstrap.min.js"></script>
+    <!-- Scrolling Nav JavaScript -->
+    <script src="../js/jquery.easing.min.js"></script>
+    <script src="../js/scrolling-nav.js"></script>
     <!-- Rotation lib -->
     <script src="../js/jQueryRotate.js"></script>
     <!-- js -->
@@ -41,12 +45,12 @@
 
         <!-- Sidebar -->
         <div id="sidebar-wrapper" class="main">
-           <ul class="sidebar-nav">
+            <ul class="sidebar-nav">
                 <li class="sidebar-brand">
                     <a href="main.html">TU/e</a>
 
                 </li>
-                
+
                 <li>
                     <div class="fold">
                         <a href="##"><img class="arrow" src="../img/arrow.png"></a>
@@ -95,8 +99,8 @@
                 </li>
                 <li>
                     <div class="sidebar-back">
-                    <a href="#" id="back">&lt; Back</a>
-                        </div>
+                        <a href="#" id="back">&lt; Back</a>
+                    </div>
                 </li>
                 <li>
                     <a href="../docs/msc_general_about.html" id="general">Learning Objectives</a>
@@ -109,11 +113,11 @@
                     <ul class="collapse in">
                         <li><a href="../docs/msc_curriculum_general.html">General</a></li>
                         <li><a href="../docs/msc_curriculum_wbs_general.html">Web science stream</a></li>
- 
+
                         <li><a class="selected" href="../docs/msc_curriculum_sfs_general.html">Software science stream</a></li>
-                         
+
                         <li><a href="../docs/msc_curriculum_ss_general.html">Systems science stream</a></li>
-                        
+
                         <li><a href="../docs/msc_curriculum_freestr.html">Free stream</a></li>
                         <li><a href="../docs/msc_curriculum_freeelct.html">Free electives</a></li>
                         <li><a href="../docs/msc_curriculum_compstudyprg.html">Composition of study program</a></li>
@@ -163,7 +167,7 @@
                     </li>
                 </div>
             </ul>
-            
+
         </div>
         <!-- /#sidebar-wrapper -->
 
@@ -186,181 +190,221 @@
                                 </ul>
                             </div>
                             <div>
-
                                 <h3>Core Courses</h3>
-                                <p><strong>The mandatory course</strong></p>
-
-                                <div class="table">
-                                    <table cellpadding="5" cellspacing="0" class="contenttable stacktable large-only">
-                                        <thead>
-                                            <tr>
-                                                <th>Quarter</th>
-                                                <th>Code</th>
-                                                <th>Course</th>
-                                                <th>EC</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>2IMA10</td>
-                                                <td>Advanced algorithms</td>
-                                                <td>5</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                <div id="1">
+                                    <img class="bodyarrow" src="../img/plus.png" width="15px">
+                                    <a href="##" class="bodyfold">
+                                        <h4>The mandatory course</h4>
+                                    </a>
+                                    <div class="collapse body">
+                                        <div class="table">
+                                            <table cellpadding="5" cellspacing="0" class="contenttable stacktable large-only">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Quarter</th>
+                                                        <th>Code</th>
+                                                        <th>Course</th>
+                                                        <th>EC</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>2IMA10</td>
+                                                        <td>Advanced algorithms</td>
+                                                        <td>5</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
                                 </div>
+                                <div id="3">
+                                    <img class="bodyarrow" src="../img/plus.png" width="15px">
+                                    <a href="##" class="bodyfold">
+                                        <h4>Stream mandatory courses</h4>
+                                    </a>
+                                    <div class="collapse body">
 
-                                <p><strong>Stream mandatory courses</strong></p>
-                                <div class="table">
-                                    <table cellpadding="5" cellspacing="0" class="contenttable stacktable large-only">
-                                        <thead>
-                                            <tr>
-                                                <th>Quarter</th>
-                                                <th>Code</th>
-                                                <th>Course</th>
-                                                <th>EC</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>2IMP10</td>
-                                                <td>Program verification techniques</td>
-                                                <td>5</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td>2IMP25</td>
-                                                <td>Software evolution</td>
-                                                <td>5</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td>2IMW20</td>
-                                                <td>Database technology</td>
-                                                <td>5</td>
-                                            </tr>
-                                            <tr>
-                                                <td>4</td>
-                                                <td>2IMP20</td>
-                                                <td>Generic language technology</td>
-                                                <td>5</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                        <div class="table">
+                                            <table cellpadding="5" cellspacing="0" class="contenttable stacktable large-only">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Quarter</th>
+                                                        <th>Code</th>
+                                                        <th>Course</th>
+                                                        <th>EC</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>2IMP10</td>
+                                                        <td>Program verification techniques</td>
+                                                        <td>5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>2IMP25</td>
+                                                        <td>Software evolution</td>
+                                                        <td>5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>2IMW20</td>
+                                                        <td>Database technology</td>
+                                                        <td>5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>2IMP20</td>
+                                                        <td>Generic language technology</td>
+                                                        <td>5</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
                                 </div>
-
-                                <p><strong>Stream electives</strong></p>
-                                <p>You have to choose at least 20 credit points from this list.</p>
-
-                                <div class="table">
-                                    <table cellpadding="5" cellspacing="0" class="contenttable stacktable large-only">
-                                        <thead>
-                                            <tr>
-                                                <th>Quarter</th>
-                                                <th>Code</th>
-                                                <th>Course</th>
-                                                <th>EC</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>2IMI15</td>
-                                                <td>Metamodeling and interoperability</td>
-                                                <td>5</td>
-                                            </tr>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>2IMI25</td>
-                                                <td>Constraint programming</td>
-                                                <td>5</td>
-                                            </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>2IMA15</td>
-                                                <td>Geometric algorithms</td>
-                                                <td>5</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td>2IMA20</td>
-                                                <td>Algorithms for geographic data</td>
-                                                <td>5</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td>2IMF15</td>
-                                                <td>Proving with computer assistance</td>
-                                                <td>5</td>
-                                            </tr>
-                                            <tr>
-                                                <td>4</td>
-                                                <td>2IMF10</td>
-                                                <td>Process algebra</td>
-                                                <td>5</td>
-                                            </tr>
-                                            <tr>
-                                                <td>4</td>
-                                                <td>2IMV15</td>
-                                                <td>Simulation in computer graphics</td>
-                                                <td>5</td>
-                                            </tr>
-                                            <tr>
-                                                <td>4</td>
-                                                <td>2IMC20</td>
-                                                <td>Research methods</td>
-                                                <td>5</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                <div id="2">
+                                    <img class="bodyarrow" src="../img/plus.png" width="15px">
+                                    <a href="##" class="bodyfold">
+                                        <h4>Stream electives</h4>
+                                    </a>
+                                    <div class="collapse body">
+                                        <p>You have to choose at least 20 credit points from this list.</p>
+                                        <div class="table">
+                                            <table cellpadding="5" cellspacing="0" class="contenttable stacktable large-only">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Quarter</th>
+                                                        <th>Code</th>
+                                                        <th>Course</th>
+                                                        <th>EC</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>2IMI15</td>
+                                                        <td>Metamodeling and interoperability</td>
+                                                        <td>5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>2IMI25</td>
+                                                        <td>Constraint programming</td>
+                                                        <td>5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>2IMA15</td>
+                                                        <td>Geometric algorithms</td>
+                                                        <td>5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>2IMA20</td>
+                                                        <td>Algorithms for geographic data</td>
+                                                        <td>5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>2IMF15</td>
+                                                        <td>Proving with computer assistance</td>
+                                                        <td>5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>2IMF10</td>
+                                                        <td>Process algebra</td>
+                                                        <td>5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>2IMV15</td>
+                                                        <td>Simulation in computer graphics</td>
+                                                        <td>5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>2IMC20</td>
+                                                        <td>Research methods</td>
+                                                        <td>5</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
                                 </div>
+                                <div id="4">
+                                    <img class="bodyarrow" src="../img/plus.png" width="15px">
+                                    <a href="##" class="bodyfold">
+                                        <h4>Free electives</h4>
+                                    </a>
+                                    <div class="collapse body">
+                                        <p> (possibly including internship): 40 EC<br>Seminar and master project: 35 EC</p>
 
-                                <p><strong>Free electives (possibly including internship): 40 EC<br>Seminar and master project: 35 EC</strong></p>
-
-                                <div class="table">
-                                    <table cellpadding="5" cellspacing="0" class="contenttable stacktable large-only">
-                                        <thead>
-                                            <tr>
-                                                <th>Quarter</th>
-                                                <th>Code</th>
-                                                <th>Course</th>
-                                                <th>EC</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>4 or 6</td>
-                                                <td></td>
-                                                <td>Seminar</td>
-                                                <td>5</td>
-                                            </tr>
-                                            <tr>
-                                                <td>7 and 8</td>
-                                                <td>2IMC00</td>
-                                                <td>Master project</td>
-                                                <td>30</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                        <div class="table">
+                                            <table cellpadding="5" cellspacing="0" class="contenttable stacktable large-only">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Quarter</th>
+                                                        <th>Code</th>
+                                                        <th>Course</th>
+                                                        <th>EC</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>4 or 6</td>
+                                                        <td></td>
+                                                        <td>Seminar</td>
+                                                        <td>5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>7 and 8</td>
+                                                        <td>2IMC00</td>
+                                                        <td>Master project</td>
+                                                        <td>30</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
                                 </div>
+                            </div>
+                        </div>
+                            </div>
+                            <div class="submenu">
+                                <ul>
+                                    <li>
+                                        <a href="#1" class="page-scroll">Mandatory course</a>
+                                    </li>
+                                    <li>
+                                        <a href="#3" class="page-scroll">Stream mandatory courses</a>
+                                    </li>
+                                    <li>
+                                        <a href="#2" class="page-scroll">Stream electives</a>
+                                    </li>
+                                    <li>
+                                        <a href="#4" class="page-scroll">Free electives</a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- /#page-content-wrapper -->
+
             </div>
-        </div>
+            <!-- /#wrapper -->
 
-        <!-- /#page-content-wrapper -->
-
-    </div>
-    <!-- /#wrapper -->
-
-    <!-- jQuery -->
+            <!-- jQuery -->
 
 
-    <!-- Menu Toggle Script -->
+            <!-- Menu Toggle Script -->
 
 
 

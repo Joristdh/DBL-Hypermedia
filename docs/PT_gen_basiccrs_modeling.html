@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head> <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
-    <link rel='shortcut icon' type='image/x-icon' href='../img/favicon.ico'/>
+    <link rel='shortcut icon' type='image/x-icon' href='../img/favicon.ico' />
     <meta name="author" content="">
     <meta name="theme-color" content="#951992" />
 
@@ -28,6 +29,9 @@
     <script src="../js/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="../js/bootstrap.min.js"></script>
+    <!-- Scrolling Nav JavaScript -->
+    <script src="../js/jquery.easing.min.js"></script>
+    <script src="../js/scrolling-nav.js"></script>
     <!-- Rotation lib -->
     <script src="../js/jQueryRotate.js"></script>
     <!-- js -->
@@ -41,12 +45,12 @@
 
         <!-- Sidebar -->
         <div id="sidebar-wrapper" class="main">
-           <ul class="sidebar-nav">
+            <ul class="sidebar-nav">
                 <li class="sidebar-brand">
                     <a href="main.html">TU/e</a>
 
                 </li>
-                
+
                 <li>
                     <div class="fold">
                         <a href="##"><img class="arrow" src="../img/arrow.png"></a>
@@ -95,8 +99,8 @@
                 </li>
                 <li>
                     <div class="sidebar-back">
-                    <a href="#" id="back">&lt; Back</a>
-                        </div>
+                        <a href="#" id="back">&lt; Back</a>
+                    </div>
                 </li>
                 <li>
                     <a href="../docs/PT_general.html" id="general">Learning Objectives</a>
@@ -182,7 +186,7 @@
                     </li>
                 </div>
             </ul>
-            
+
         </div>
         <!-- /#sidebar-wrapper -->
 
@@ -197,40 +201,72 @@
 
                                 <h1>Major Psychology &amp; Technology</h1>
                                 <h3>Modeling</h3>
-                                <h4 id="1">Introduction to Modeling</h4>
-                                <p>Engineers have to solve all kinds of practical problems. They take decisions relating to design, make predictions, or explain phenomena. Mathematics is used in many situations without the original problem itself being of a mathematical nature. Translating a non-mathematical problem into a mathematical version is called ‘modeling’. The Introduction to Modeling course examines modeling as one of the basic skills of an engineer. You learn how you can convert a non-mathematical problem into a form which can be tackled using mathematical tools, without losing sight of the original question.</p>
-                                <h4 id="2">How about the weather forecast?</h4>    
-                                <p>One example of modeling that is familiar to everyone is the weather forecast. If you want to know whether it is going to rain this afternoon, you might only need to look up at the sky. However, if you really want to know what the chances are of it raining tomorrow or the day after, you will have to do more than that. You need an idea of the movement of areas of high and low pressure, air flows and temperature variations in the atmosphere. Weather balloons and satellite photos provide figures based on current measurements (temperature, wind speed, humidity, solar radiation, etc.). Computers then start processing the data to generate weather charts. These charts can even be made dynamic in order to predict future developments (like the online weather radar!). Meteorologists then interpret the computer calculations and use them as a basis to make their forecasts.</p>
-                                <h4 id="3">Engineers are always needed</h4>
-                                <p>Modeling also plays a major role in technical design. If, for example, you are planning to build a bridge you will want to know in advance whether it is going to be strong enough to withstand the vibrations caused by heavy traffic. This, too, will involve a conversion into mathematical formulas, and specifically of the development of forces in the bridge. Those formulas are extrapolated using a computer. However, as in the case of the weather forecasts, the interpretation of the results by an engineer is the final step.</p>
-                                <h4 id="">Four variants</h4>
-                                <p>Practical problems know a large variety. An electro technical engineer may use different techniques than an architect. Therefore, one part of the course Introduction to Modeling is generic (=identical for all students), whereas a second part is specific (=different for different groups of students).<br>
-                                The generic part contains those aspects of modeling that occur in every modeling problem. Every week, you will do a homework assignment related to the generic part. This homework assignment is the same for all students; every student submits, each week, his/her own elaboration. The specific part comes in four varieties:</p>
-                                <ol>
-                                    <li>Variety ‘Dynamical Systems’. Dynamical systems are crucially dependent on time. Examples are electronic circuits, mass spring systems, systems where temperatures change over time, or (some) systems with moving gases and liquids.</li>
-                                    <li>Variety ‘Data Modeling’. In data modeling, the starting point is measured or acquired data. The challenge is, to try to understand properties of the modeled system by searching a structure in these data: perhaps data points are on a straight line or a simple curve; perhaps you can distinguish meaningful clusters in the data.</li>
-                                    <li>Variety ‘Process Modeling’. Process models relate to systems with distinct states. For instance, traffic lights that either show red, green or orange, where these states are visited in a determined order. A process model tries to make statements regarding such systems, for instance: is some desired state reached, and are dangerous or forbidden states (say, four traffic lights on a cross road all showing green) excluded?</li>
-                                    <li>Variety ‘Modeling from Scratch’. In this variety, the studied problems are not directly related to a particular technical discipline (such as physics, chemistry or computer science). Rather, the modeling process is important: what quantities should be chosen, which relations are essential, how to translate these relations to formulas, and what is the relevance of the outcomes?</li>
-                                </ol>
-                                <p>Every student takes the generic part plus one of the four varieties. Which variety you take determines the modeling project you will be working on in your group. Groups typically contain 5 students. Elaborating the modeling project takes place during the entire quartile.</p>
+                                <div id="1">
+                                    <img class="bodyarrow" src="../img/plus.png" width="15px">
+                                    <a href="##" class="bodyfold">
+                                        <h4>Introduction to Modeling</h4>
+                                    </a>
+                                    <div class="collapse body">
+
+                                        <p>Engineers have to solve all kinds of practical problems. They take decisions relating to design, make predictions, or explain phenomena. Mathematics is used in many situations without the original problem itself being of a mathematical nature. Translating a non-mathematical problem into a mathematical version is called ‘modeling’. The Introduction to Modeling course examines modeling as one of the basic skills of an engineer. You learn how you can convert a non-mathematical problem into a form which can be tackled using mathematical tools, without losing sight of the original question.</p>
+                                    </div>
+
+                                </div>
+                                <div id="2">
+                                    <img class="bodyarrow" src="../img/plus.png" width="15px">
+                                    <a href="##" class="bodyfold">
+                                        <h4>How about the weather forecast?</h4>
+                                    </a>
+                                    <div class="collapse body">
+                                        <p>One example of modeling that is familiar to everyone is the weather forecast. If you want to know whether it is going to rain this afternoon, you might only need to look up at the sky. However, if you really want to know what the chances are of it raining tomorrow or the day after, you will have to do more than that. You need an idea of the movement of areas of high and low pressure, air flows and temperature variations in the atmosphere. Weather balloons and satellite photos provide figures based on current measurements (temperature, wind speed, humidity, solar radiation, etc.). Computers then start processing the data to generate weather charts. These charts can even be made dynamic in order to predict future developments (like the online weather radar!). Meteorologists then interpret the computer calculations and use them as a basis to make their forecasts.</p>
+                                    </div>
+
+                                </div>
+                                <div id="3">
+                                    <img class="bodyarrow" src="../img/plus.png" width="15px">
+                                    <a href="##" class="bodyfold">
+                                        <h4>Engineers are always needed</h4>
+                                    </a>
+                                    <div class="collapse body">
+                                        <p>Modeling also plays a major role in technical design. If, for example, you are planning to build a bridge you will want to know in advance whether it is going to be strong enough to withstand the vibrations caused by heavy traffic. This, too, will involve a conversion into mathematical formulas, and specifically of the development of forces in the bridge. Those formulas are extrapolated using a computer. However, as in the case of the weather forecasts, the interpretation of the results by an engineer is the final step.</p>
+
+                                    </div>
+
+                                </div>
+                                <div id="4">
+                                    <img class="bodyarrow" src="../img/plus.png" width="15px">
+                                    <a href="##" class="bodyfold">
+                                        <h4>Four variants</h4>
+                                    </a>
+                                    <div class="collapse body">
+                                        <p>Practical problems know a large variety. An electro technical engineer may use different techniques than an architect. Therefore, one part of the course Introduction to Modeling is generic (=identical for all students), whereas a second part is specific (=different for different groups of students).<br> The generic part contains those aspects of modeling that occur in every modeling problem. Every week, you will do a homework assignment related to the generic part. This homework assignment is the same for all students; every student submits, each week, his/her own elaboration. The specific part comes in four varieties:</p>
+                                        <ol>
+                                            <li>Variety ‘Dynamical Systems’. Dynamical systems are crucially dependent on time. Examples are electronic circuits, mass spring systems, systems where temperatures change over time, or (some) systems with moving gases and liquids.</li>
+                                            <li>Variety ‘Data Modeling’. In data modeling, the starting point is measured or acquired data. The challenge is, to try to understand properties of the modeled system by searching a structure in these data: perhaps data points are on a straight line or a simple curve; perhaps you can distinguish meaningful clusters in the data.</li>
+                                            <li>Variety ‘Process Modeling’. Process models relate to systems with distinct states. For instance, traffic lights that either show red, green or orange, where these states are visited in a determined order. A process model tries to make statements regarding such systems, for instance: is some desired state reached, and are dangerous or forbidden states (say, four traffic lights on a cross road all showing green) excluded?</li>
+                                            <li>Variety ‘Modeling from Scratch’. In this variety, the studied problems are not directly related to a particular technical discipline (such as physics, chemistry or computer science). Rather, the modeling process is important: what quantities should be chosen, which relations are essential, how to translate these relations to formulas, and what is the relevance of the outcomes?</li>
+                                        </ol>
+                                        <p>Every student takes the generic part plus one of the four varieties. Which variety you take determines the modeling project you will be working on in your group. Groups typically contain 5 students. Elaborating the modeling project takes place during the entire quartile.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div id="submenu">
+                    <div class="submenu">
                         <ul>
-                        <li>
-                            <a href="#1" class="page-scroll">Introduction to Modeling</a>
-                        </li>
-                        <li>
-                            <a href="#2">How about the weather forecast?</a>
-                        </li>
-                        <li>
-                            <a href="#3">Engineers are always needed</a>
-                        </li>
-                        <li>
-                            <a href="#4">Four variants</a>
-                        </li>
-                        
+                            <li>
+                                <a href="#1" class="page-scroll">Introduction to Modeling</a>
+                            </li>
+                            <li>
+                                <a href="#2" class="page-scroll">How about the weather forecast?</a>
+                            </li>
+                            <li>
+                                <a href="#3" class="page-scroll">Engineers are always needed</a>
+                            </li>
+                            <li>
+                                <a href="#4" class="page-scroll">Four variants</a>
+                            </li>
+
                         </ul>
                     </div>
                 </div>
