@@ -3,7 +3,7 @@ var first = 0;
 $(document).ready(function () {
     "use strict";
     $(".arrowc").rotate({
-        angle: 180
+        angle: 0
     });
     $("a.switch").click(function () {
         localStorage.major = null;
@@ -40,17 +40,17 @@ $(document).ready(function () {
     $(".fold").click(function () {
         $(".arrow, .arrowc").rotate({
             duration: 600,
-            animateTo: 0
+            animateTo: 180
         });
-        if ($(this).find(".arrow, .arrowc").getRotateAngle() > 100) {
+        if ($(this).find(".arrow, .arrowc").getRotateAngle() < 100) {
             $(this).find(".arrow, .arrowc").rotate({
                 duration: 600,
-                animateTo: 0
+                animateTo: 180
             });
         } else {
             $(this).find(".arrow, .arrowc").rotate({
                 duration: 600,
-                animateTo: 180
+                animateTo: 0
             });
         }
 
