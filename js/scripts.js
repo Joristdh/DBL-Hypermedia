@@ -42,7 +42,7 @@ $(document).ready(function () {
             duration: 600,
             animateTo: 0
         });
-        if ($(this).find(".arrow, .arrowc").getRotateAngle() > 100) {
+        if ($(this).find(".arrow, .arrowc").getRotateAngle() < 0) {
             $(this).find(".arrow, .arrowc").rotate({
                 duration: 600,
                 animateTo: 0
@@ -50,7 +50,7 @@ $(document).ready(function () {
         } else {
             $(this).find(".arrow, .arrowc").rotate({
                 duration: 600,
-                animateTo: 180
+                animateTo: -180
             });
         }
 
